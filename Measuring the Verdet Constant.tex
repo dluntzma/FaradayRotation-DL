@@ -64,7 +64,7 @@ We performed the experiment to measure the Verdet constant of our material in tw
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{V_ThetaRel_Plot.pdf}
-\caption{Photo-detector voltage (proportional to light intensity) plotted against relative angle (the angle between the filter and the laser’s polarization) from 0 to 2pi radians.  The red points are the measurements taken without a magnetic field, the orange points were taken with 1A of current passing through the solenoid, the green points with the current at 2A, and the blue points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) – A$, with $A$ held constant at 6.2845 V (obtained from the first curve fit), and $C$ calculated by the curve fit. }
+\caption{Photo-detector voltage (proportional to light intensity) plotted against relative angle (the angle between the filter and the laser’s polarization) from 0 to 2pi radians.  The red points are the measurements taken without a magnetic field, the orange points were taken with 1A of current passing through the solenoid, the green points with the current at 2A, and the blue points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) - A$, with $A$ held constant at 6.2845 V (obtained from the first curve fit), and $C$ calculated by the curve fit. }
 \label{V_ThetaRel_Plot}
 \end{figure}
 
@@ -97,7 +97,36 @@ Current (A) & Voltage (V) & Error Voltage (V)\\
 
 \section{Analysis}
 
-%I'm putting our figures and tables here for later
+We analyzed the data from both experiments separately to obtain two estimates for the Verdet Constant.  For the changing theta experiment, we used IgorPro to fit the function $V = A \cos ^2 (\theta + C) - A$ to the data in Figure ~\ref{V_ThetaRel_Plot}.  We then calculated the magnetic field from the applied current and our measurements for field at 2A, and the phase shift from the difference between the c-values of the curve fits.  The results are in Table ~\ref{B*L_PhaseShift_Table}.  
+
+\begin{table}[h!]
+\centering
+\caption{Calculated phase shifts for the changing angle experiment, with the magnetic fields calculated from the applied currents.}
+\begin{ruledtabular}
+\begin{tabular}{c c c c}
+Phase Shift (rad) & Error Phase Shift (rad) & Magnetic Field*Length (mT*cm) & Error Magnetic Field*Length (mT*cm)\\
+\hline	% horizontal line to separate headings from data
+0 & 0.002  & 0  & 0  \\
+0.022  & 0.0024 & 108 & 4  \\
+0.0407 & 0.0023 & 215 & 8  \\
+0.0639 & 0.0025 & 323 & 12
+\end{tabular}
+\end{ruledtabular}
+\label{B*L_PhaseShift_Table}
+\end{table}
+
+We then plotted the phase shift versus the magnetic field multiplied by the length of our rod, which gave us Figure ~\ref{PhaseShift_B*L_Plot}. From the theory we know that $\Delta \theta = v_c B L$ therefore we would expect our data to be linear and the Verdet constant to be the slope.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{PhaseShift_B-L_Plot.pdf}
+\caption{A plot of Table \ref{B*L_PhaseShift_Table}, applied magnetic field (times length of the refracting material) versus the resulting phase shift in the polarization of the laser beam. The slope of a linear curve fit of this plot gives a value for the Verdet constant of the material. }
+\label{PhaseShift_B*L_Plot}
+\end{figure}
+
+From the linear fit of our plot we obtained a slope $19.5 \pm0.9 \frac{1}{Tm}$.
+
+To get the Verdet constant from our changing field experiment, we first calculated the values of magnetic field times length for currents from -3A to 3A in steps of 0.5As. As before we calculated the field from our measured field for 2A and the linear relationship between field and current. The results are in Table ~\ref{V_B*L_Table}. 
 
 \begin{table}[h!]
 \centering
@@ -124,44 +153,7 @@ Magnetic Field * Length (mT*cm) & Error B*L (mT*cm) & Voltage (V) & Error Voltag
 \label{V_B*L_Table}
 \end{table}
 
-\begin{table}[h!]
-\centering
-\caption{C values taken from the curve fits to Figure ~\ref{V_ThetaRel_Plot}}
-\begin{ruledtabular}
-\begin{tabular}{c c c}
-Current (A) & C value from curve fit (rad) & Error C value (rad)\\
-\hline	% horizontal line to separate headings from data
-0 & 0.0088553 & 0.001  \\
-1 & 0.030849  & 0.0014 \\
-2 & 0.049599  & 0.0013 \\
-3 & 0.072754  & 0.0015
-\end{tabular}
-\end{ruledtabular}
-\label{I_cValue_Table}
-\end{table}
-
-\begin{table}[h!]
-\centering
-\caption{Calculated phase shifts for the changing angle experiment, with the magnetic fields calculated from the applied currents.}
-\begin{ruledtabular}
-\begin{tabular}{c c c c}
-Phase Shift (rad) & Error Phase Shift (rad) & Magnetic Field*Length (mT*cm) & Error Magnetic Field*Length (mT*cm)\\
-\hline	% horizontal line to separate headings from data
-0 & 0.002  & 0  & 0  \\
-0.022  & 0.0024 & 108 & 4  \\
-0.0407 & 0.0023 & 215 & 8  \\
-0.0639 & 0.0025 & 323 & 12
-\end{tabular}
-\end{ruledtabular}
-\label{B*L_PhaseShift_Table}
-\end{table}
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=5in]{PhaseShift_B-L_Plot.pdf}
-\caption{A plot of Table \ref{B*L_PhaseShift_Table}, applied magnetic field (times length of the refracting material) versus the resulting phase shift in the polarization of the laser beam. The slope of a linear curve fit of this plot gives a value for the verdet constant of the material. }
-\label{PhaseShift_B*L_Plot}
-\end{figure}
+We plotted the results of Table ~\ref{V_B*L_Table} in Figure ~\ref{V_B*L_Plot}. From the slope of the linear fit of this plot we got $\frac{\delta V}{\delta BL}$
 
 \begin{figure}[h!]
 \centering
@@ -169,6 +161,35 @@ Phase Shift (rad) & Error Phase Shift (rad) & Magnetic Field*Length (mT*cm) & Er
 \caption{A plot of Table \ref{V_B*L_Table}, the applied magnetic field (times the length of the refracting material) versus the voltage measured by the photodetector for that field. The slope of a linear curve fit to this plot can be used to calculate the verdet constant of the material. }
 \label{V_B*L_Plot}
 \end{figure}
+
+Since, as shown above $v_c = \frac{\delta \theta}{\delta BL}$, we can use the chain rule for derivatives and get: 
+\\
+$\frac{\delta V}{\delta BL} = \frac{\delta V}{\delta \theta} \frac{\delta \theta}{\delta BL} = \frac{\delta V}{\delta \theta} v_c$.  
+\\
+Therefore $v_c = \frac{\frac{\delta V}{\delta BL}}{\frac{\delta V}{\delta \theta}}$.
+\\
+From Figure ~\ref{V_B*L_Plot} we got $\frac{\delta V}{\delta BL} = 0.0012018 \pm 1.8 \times 10^{-6}$. To get $\frac{\delta V}{\delta \theta}$, we took the derivative of the function $V = A \cos^{2}(\theta) - A$ at $\theta = \pi/4$ and obtained $\frac{\delta V}{\delta \theta} = -A$, and from the fit to the zero field data in Figure ~\ref{V_ThetaRel_Plot}, $-A = 6.285 \pm 0.008 V$.  
+
+Dividing these two results, we get $v_c = \frac{\frac{\delta V}{\delta BL}}{\frac{\delta V}{\delta \theta}} = 19.12 \pm 0.05 \frac{1}{Tm}$.  
+
+%\begin{table}[h!]
+%\centering
+%\caption{C values taken from the curve fits to Figure ~\ref{V_ThetaRel_Plot}}
+%\begin{ruledtabular}
+%\begin{tabular}{c c c}
+%Current (A) & C value from curve fit (rad) & Error C value (rad)\\
+%\hline	% horizontal line to separate headings from data
+%0 & 0.0088553 & 0.001  \\
+%1 & 0.030849  & 0.0014 \\
+%2 & 0.049599  & 0.0013 \\
+%3 & 0.072754  & 0.0015
+%\end{tabular}
+%\end{ruledtabular}
+%\label{I_cValue_Table}
+%\end{table}
+
+
+
 
 \section{Discussion}
 
