@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 OCT 2014 11:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  7 OCT 2014 11:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -306,7 +306,7 @@ File: Faraday_lab_set-up.pdf Graphic file (type pdf)
 Package pdftex.def Info: Faraday_lab_set-up.pdf used on input line 50.
 (pdftex.def)             Requested size: 433.62pt x 335.07939pt.
  [2 <./Faraday_lab_set-up.pdf>]
-<V_ThetaRel_Plot.pdf, id=146, 1153.30875pt x 705.63625pt>
+<V_ThetaRel_Plot.pdf, id=154, 1153.30875pt x 705.63625pt>
 File: V_ThetaRel_Plot.pdf Graphic file (type pdf)
 
 <use V_ThetaRel_Plot.pdf>
@@ -329,7 +329,7 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PhaseShift_B-L_Plot.pdf, id=150, 764.8575pt x 553.06625pt>
+<PhaseShift_B-L_Plot.pdf, id=158, 764.8575pt x 553.06625pt>
 File: PhaseShift_B-L_Plot.pdf Graphic file (type pdf)
 
 <use PhaseShift_B-L_Plot.pdf>
@@ -343,11 +343,11 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<V_B-L_Plot.pdf, id=166, 808.01875pt x 478.78876pt>
+<V_B-L_Plot.pdf, id=174, 995.72pt x 631.35875pt>
 File: V_B-L_Plot.pdf Graphic file (type pdf)
  <use V_B-L_Plot.pdf>
 Package pdftex.def Info: V_B-L_Plot.pdf used on input line 162.
-(pdftex.def)             Requested size: 361.34999pt x 214.116pt.
+(pdftex.def)             Requested size: 361.34999pt x 229.12901pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -377,10 +377,10 @@ ic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/a
 msfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti12.pfb>
-Output written on "Measuring the Verdet Constant.pdf" (8 pages, 445711 bytes).
+Output written on "Measuring the Verdet Constant.pdf" (8 pages, 588180 bytes).
 PDF statistics:
- 241 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
+ 249 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
