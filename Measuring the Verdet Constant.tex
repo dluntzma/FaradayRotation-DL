@@ -41,27 +41,31 @@ Faraday was the first experimentally observe that light and magnetic field were 
 \section{Introduction} % Section titles are automatically converted to all-caps.
 % Section numbering is automatic.
 
-Faraday Rotation refers a phenomenon first observed by Faraday in 1945. It was a landmark discovery because it was the first link between light and magnetism.~\cite{teachspin} Faraday discovered that polarized light propagating through certain materials while in a magnetic field experienced a shift in the polarization angle. This effect can be observed in materials which have different refractive indices for left circularly polarized (LCP) light and right circularly polarized (RCP) light when they are in a magnetic field. These materials are called birefringent. Light can be written as the vector sum of LCP and RCP components. When it propagates through the material its components experience different phase shifts leading to a total phase shift in the light's polarization.~\cite{XXX} The magnitude of the phase shift depends on three factors: the strength of the magnetic field, the distance that the light travels in the material and the properties of the material itself. The phase shift for a specific material is given by the Verdet constant ($v_c$) which has units of $\frac{\text{radians}}{\text{tesla\ meter}}$. Thus the equation for total phase shift is $\Delta \theta = v_c B L$.
+Faraday Rotation refers a phenomenon first observed by Faraday in 1945. It was a landmark discovery because it was the first link between light and magnetism.~\cite{teachspin} Faraday discovered that polarized light propagating through certain materials while in a magnetic field experienced a shift in the polarization angle. This effect occurs in materials which have different refractive indices for left circularly polarized (LCP) light and right circularly polarized (RCP) light when they are in a magnetic field. These materials are called birefringent. Light can be written as the vector sum of LCP and RCP components; when it propagates through the material its components experience different phase shifts leading to a total phase shift in the light's polarization.~\cite{melissanos} The magnitude of the phase shift depends on three factors: the strength of the magnetic field, the distance that the light travels in the material and the properties of the material itself. The phase shift for a specific material is given by the Verdet constant ($v_c$) which has units of $\frac{\text{radians}}{\text{tesla\ meter}}$. Thus the equation for total phase shift is $\Delta \theta = v_c B L$.
 
-In this paper, we measure the Verdet constant of SF-59 glass in order to observe the linear relationship expected between phase shift and magnetic field. We performed a second experiment to confirm the value we found for the Verdet constant in our first experiment.
+In this paper, we measure the Verdet constant of SF-59 glass using the linear relationship expected between phase shift and magnetic field. We performed a second experiment to confirm the value we found for the Verdet constant in our first experiment.
 
 \section{Methods}
 
-Our experimental setup was based off the TeachSpin teaching manual. We used a TeachSpin FRI-A apparatus consisting of a diode laser, a solenoid, a polarizing lens and photodetector. To observe Faraday Rotation and measure the Verdet constant we used a SF-59 glass rod. SF-59 glass is heavy flint glass with a high lead content. The manufacturers dope silicone glass with lead  because the high lead content increases the Verdet constant of the glass, making it easier to observe Faraday Rotation.\cite{opticalglass} We placed the glass rod in the center of the solenoid. The length of our rod was 5 cm shorter than the solenoid so that the magnetic field was approximately constant across the length of the rod and we could neglect the sever drop in magnetic field due to the edges of the solenoid.
+Our experimental setup was based off the TeachSpin teaching manual. ~\cite{teachspin} We used a TeachSpin FRI-A apparatus consisting of a diode laser, a solenoid, a polarizing filter and photodiode. To observe Faraday Rotation and measure the Verdet constant we used a SF-59 glass rod. SF-59 glass is heavy flint glass with a high lead content. The manufacturers dope silicone glass with lead because the high lead content increases the Verdet constant of the glass, making it easier to observe Faraday Rotation.\cite{opticalglass} We placed the glass rod in the center of the solenoid. The length of our rod was 5 cm shorter than the solenoid so that the magnetic field was approximately constant across the length of the rod and we could neglect the severe drop in magnetic field near the edges of the solenoid.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{Faraday_lab_set-up.pdf}
+<<<<<<< HEAD
 \caption{The set-up of our experiment. The light source was a laser, turned on and off at 400Hz by a function generator. We sent the beam through a solenoid containing a rod of , and next a polarization filter. A photodetector at the other end measured the light intensity. This signal went through a  lock-in detector, and from there to the computer.}
+=======
+\caption{The set-up of our experiment. The light source was a laser, powered by a function generator. We sent the beam through a solenoid containing the glass rod and a polarization filter. A photodiode at the other end measured the light intensity and outputted a voltage. This signal went through a pre-amp, bandpass and lock-in detector to remove offsets due to ambient light and photodiode drift. The much clearer signal was then measured with a multimeter connected to a computer.}
+>>>>>>> FETCH_HEAD
 \label{set-up}
 \end{figure}
 
 
-Our power source was a Keithley 2230-30-1 Triple Channel DC Power Supply which we used on current control throughout our experiments. We connected the two 3 volt terminals in parallel so that we could obtain a total current of 3 amps through the solenoid. By varying the current through the solenoid we could change the magnetic field through the glass rod. We measured the magnetic field using a TEL-Atomic Inc. Smart Magnetic Sensor for a current of 2A and obtained a field of 21.8mT at the center of solenoid decreasing to 20.5mT at the edges of the glass rod. We took the average of this rage to be our best value and difference between high and low values divided by two to be our uncertainty. To obtain field values for other currents we exploited the linear relationship between magnetic field and current.
+Our power source to the solenoid was a Keithley 2230-30-1 Triple Channel DC Power Supply which we used on current control throughout our experiments. We connected the two 3 volt terminals in parallel so that we could obtain a maximum current of 3 amps through the solenoid. By varying the current through the solenoid we could change the magnetic field through the glass rod. We measured the magnetic field using a TEL-Atomic Inc. Smart Magnetic Sensor for a current of 2A and obtained a field of 21.8mT at the center of solenoid decreasing to 20.5mT at the edges of the glass rod. We took the average of this rage to be our best value and difference between high and low values divided by two to be our uncertainty. To obtain field values for other currents we exploited the linear relationship between magnetic field and current.
 
-We used a Rigol DG1022A function generator to modulate the laser at at frequency of 400Hz. The signal from the photodiode was run through a preamp, a bandpass filter and a lock-in detector. We used lock-in detector to stabilize our measurements and filter out ambient light from the room along with other forms of systematic error.
+We used a 650 nm diode laser powered by a Rigol DG1022A function generator. From the function generator we obtained a square wave which turned the laser on and off at frequency of 400Hz. After passing through the solenoid, the light passed through a polarizing filter before being measured by a photodiode. The output of the photodiode was a voltage that contained significant noise and offsets due to the ambient light of the room and the drift of the photodiode.  To remove the noise and offsets, the signal from the photodiode was run through a preamp, a bandpass filter and a lock-in detector. The preamp was with respect to ground. The bandpass filter removed frequencies both higher and lower than our signal and ensured that we had only the first harmonic. Finally, we used lock-in detector to select the specific frequency and phase of our signal. The final signal was had very little noise and was stable even when the room lights were turned off and on.
 
-The output from the lock-in detector was then measured with a Keithley 2100 DMM. To facilitate data collection we used a computer program (helpfully provided by our instructors) called "Keithley DC Incremental Write." The program would record 16 values for voltage, average them and give the result with uncertainty as one data point. 
+The final signal from the lock-in detector was then measured with a Keithley 2100 DMM. To facilitate data collection we used a computer program (helpfully provided by our instructors) called "Keithley DC Incremental Write." The program would record a specified number of voltage values then average them to obtain a single data point. Therefore, our results for each point were the mean of the measured points at that intensity with an uncertainty given as the standard divination of the mean. 
 
 For our changing theta experiment, we measured the voltage while rotating the polarizing lens. We started with no current through the solenoid and an angle of 90$^{\circ}$ between the polarized laser and the polarizing lens. We found this angle by observing where our intensity and measured voltage were at a minimum. We called this a relative angle of 0$^{\circ}$. We then measured the voltage every 10$^{\circ}$ for a single rotation (360$^{\circ}$). We repeated this measurement for currents of I = 1A, I = 2A and I = 3A.
 
@@ -82,7 +86,7 @@ From the measurements of changing magnetic field, with a constant polarization f
 
 \begin{table}[h!]
 \centering
-\caption{Voltage readings from the photodetector for various currents applied to the solenoid. }
+\caption{Voltage readings from the photodiode for various currents applied to the solenoid. }
 \begin{ruledtabular}
 \begin{tabular}{c c c}
 Current (A) & Voltage (V) & Error Voltage (V)\\
@@ -140,7 +144,7 @@ To get the Verdet constant from our changing field experiment, we first calculat
 
 \begin{table}[h!]
 \centering
-\caption{The fields due to the currents in table ~\ref{V_I_Table} applied to our solenoid, with the resulting voltage measured by the photodetector. }
+\caption{The fields due to the currents in table ~\ref{V_I_Table} applied to our solenoid, with the resulting voltage measured by the photodiode. }
 \begin{ruledtabular}
 \begin{tabular}{c c c c}
 Magnetic Field * Length (mT*cm) & Error B*L (mT*cm) & Voltage (V) & Error Voltage (V)\\
@@ -168,7 +172,7 @@ We plotted the results of Table ~\ref{V_B*L_Table} in Figure ~\ref{V_B*L_Plot}. 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{V_B-L_Plot.pdf}
-\caption{A plot of Table \ref{V_B*L_Table}, the applied magnetic field (times the length of the refracting material) versus the voltage measured by the photodetector for that field. The slope of a linear curve fit to this plot can be used to calculate the Verdet constant of the material. }
+\caption{A plot of Table \ref{V_B*L_Table}, the applied magnetic field (times the length of the refracting material) versus the voltage measured by the photodiode for that field. The slope of a linear curve fit to this plot can be used to calculate the Verdet constant of the material. }
 \label{V_B*L_Plot}
 \end{figure}
 
@@ -203,7 +207,7 @@ Dividing these two results, we get $v_c = \frac{\frac{\delta V}{\delta BL}}{\fra
 
 \section{Discussion}
 
-All of our data fit the expected relationships. In Figure ~\ref{V_ThetaRel_Plot} the intensity of the light, given by voltage from the photodetector, showed a $\cos^2\theta$ relationship with relative angle between the laser and the polarizing filter as was expected. For the changing theta experiment the relationship between phase shift and magnetic field had a constant, positive slope, Figure ~\ref{PhaseShift_B*L_Plot}, which is reassuring since slope should be the Verdet constant, a constant positive value.  For the changing field experiment we expect intensity to depend linearly on field because a change in field causes a proportional change in phase shift and the relationship between intensity, i.e. voltage, and phase shift to be linear for small changes in phase. The values that we obtained for the Verdet constant from both experiments agreed with each other within uncertainty. 
+All of our data fit the expected relationships. In Figure ~\ref{V_ThetaRel_Plot} the intensity of the light, given by voltage from the photodiode, showed a $\cos^2\theta$ relationship with relative angle between the laser and the polarizing filter as was expected. For the changing theta experiment the relationship between phase shift and magnetic field had a constant, positive slope, Figure ~\ref{PhaseShift_B*L_Plot}, which is reassuring since slope should be the Verdet constant, a constant positive value.  For the changing field experiment we expect intensity to depend linearly on field because a change in field causes a proportional change in phase shift and the relationship between intensity, i.e. voltage, and phase shift to be linear for small changes in phase. The values that we obtained for the Verdet constant from both experiments agreed with each other within uncertainty. 
 
 The biggest sources of error in our experiments came from our measurement of the magnetic field and the imprecision of our angle measurement on the polarizing filter. To decrease error in future experiments we would suggest using a more accurate magnetic field sensor and to measure the magnetic field for all currents used in the experiment. 
 
