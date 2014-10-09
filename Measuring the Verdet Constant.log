@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 OCT 2014 10:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  9 OCT 2014 11:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -300,7 +300,20 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 34.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 
-Package natbib Warning: Citation `XXX' on page 2 undefined on input line 44.
+Package natbib Warning: Citation `teachspin' on page 2 undefined on input line 
+44.
+
+
+Package natbib Warning: Citation `melissanos' on page 2 undefined on input line
+ 44.
+
+
+Package natbib Warning: Citation `teachspin' on page 2 undefined on input line 
+50.
+
+
+Package natbib Warning: Citation `opticalglass' on page 2 undefined on input li
+ne 50.
 
 <Faraday_lab_set-up.pdf, id=13, 794.97pt x 614.295pt>
 File: Faraday_lab_set-up.pdf Graphic file (type pdf)
@@ -312,80 +325,4 @@ Package pdftex.def Info: Faraday_lab_set-up.pdf used on input line 54.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2] [3 <./Faraday_lab_set-up.pdf>]
-<V_ThetaRel_Plot.pdf, id=159, 1153.30875pt x 705.63625pt>
-File: V_ThetaRel_Plot.pdf Graphic file (type pdf)
-
-<use V_ThetaRel_Plot.pdf>
-Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 76.
-(pdftex.def)             Requested size: 433.62pt x 265.30203pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<PhaseShift_B-L_Plot.pdf, id=163, 879.285pt x 642.4pt>
-File: PhaseShift_B-L_Plot.pdf Graphic file (type pdf)
-
-<use PhaseShift_B-L_Plot.pdf>
-Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 132.
-(pdftex.def)             Requested size: 361.34999pt x 263.99344pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[5 <./V_ThetaRel_Plot.pdf>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-<V_B-L_Plot.pdf, id=178, 995.72pt x 631.35875pt>
-File: V_B-L_Plot.pdf Graphic file (type pdf)
- <use V_B-L_Plot.pdf>
-Package pdftex.def Info: V_B-L_Plot.pdf used on input line 170.
-(pdftex.def)             Requested size: 361.34999pt x 229.12901pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[6] [7 <./PhaseShift_B-L_Plot.pdf>] [8]
-No file "Measuring the Verdet Constant".bbl.
-
-Package natbib Warning: There were undefined citations.
-
-[9 <./V_B-L_Plot.pdf>] (./Measuring the Verdet Constant.aux) ) 
-Here is how much of TeX's memory you used:
- 4192 strings out of 493117
- 56355 string characters out of 6135433
- 136196 words of memory out of 5000000
- 7602 multiletter control sequences out of 15000+600000
- 12393 words of font info for 47 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 38i,7n,30p,1252b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Measuring the Verdet Constant.pdf" (9 pages, 621432 bytes).
-PDF statistics:
- 260 PDF objects out of 1000 (max. 8388607)
- 161 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 21 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+[2] [3 <./Fara
