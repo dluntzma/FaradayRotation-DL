@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 OCT 2014 10:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 OCT 2014 10:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -310,23 +310,12 @@ Package pdftex.def Info: Faraday_lab_set-up.pdf used on input line 54.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [2] [3 <./Faraday_lab_set-up.pdf>] [4]
-
-LaTeX Warning: Reference `V_ThetaRel.pdf' on page 5 undefined on input line 72.
-
-
-<V_ThetaRel_Plot.pdf, id=202, 1153.30875pt x 705.63625pt>
+<V_ThetaRel_Plot.pdf, id=202, 848.16875pt x 511.9125pt>
 File: V_ThetaRel_Plot.pdf Graphic file (type pdf)
 
 <use V_ThetaRel_Plot.pdf>
 Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 76.
-(pdftex.def)             Requested size: 1153.30594pt x 705.63452pt.
-
-Overfull \hbox (741.88104pt too wide) in paragraph at lines 76--77
- [][]\OT1/cmr/m/n/10.95 [width=6in] 
- []
-
-
-LaTeX Warning: Float too large for page by 163.01369pt on input line 79.
+(pdftex.def)             Requested size: 433.62pt x 261.71243pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -360,45 +349,32 @@ Package pdftex.def Info: V_B-L_Plot.pdf used on input line 170.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6] [7]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 207.
-
+[6 <./V_ThetaRel_Plot.pdf>] [7] [8 <./PhaseShift_B-L_Plot.pdf>]
 No file "Measuring the Verdet Constant".bbl.
-[8]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 220.
-
-[9 <./V_ThetaRel_Plot.pdf>] [10 <./PhaseShift_B-L_Plot.pdf> <./V_B-L_Plot.pdf>]
-(./Measuring the Verdet Constant.aux)
-
-LaTeX Warning: There were undefined references.
-
- ) 
+[9] [10 <./V_B-L_Plot.pdf>] (./Measuring the Verdet Constant.aux) ) 
 Here is how much of TeX's memory you used:
  4190 strings out of 493117
- 56350 string characters out of 6135433
- 140199 words of memory out of 5000000
+ 56340 string characters out of 6135433
+ 141198 words of memory out of 5000000
  7601 multiletter control sequences out of 15000+600000
- 12391 words of font info for 47 fonts, out of 8000000 for 9000
+ 12084 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,30p,1250b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
-usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loca
-l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Measuring the Verdet Constant.pdf" (10 pages, 664798 bytes).
+</usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/t
+exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on "Measuring the Verdet Constant.pdf" (10 pages, 663533 bytes).
 
 PDF statistics:
  299 PDF objects out of 1000 (max. 8388607)
