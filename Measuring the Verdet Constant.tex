@@ -63,7 +63,7 @@ We used a 650 nm diode laser powered by a Rigol DG1022A function generator. From
 
 The final signal from the lock-in detector was then measured with a Keithley 2100 DMM. To facilitate data collection we used a computer program (helpfully provided by our instructors) called "Keithley DC Incremental Write." The program would record a specified number of values for voltage then average them to obtain a single data point. Therefore, our results for each point were the mean of the measured points at that intensity with an uncertainty given as the standard divination of the mean. 
 
-For our fist experiment, which we called the changing theta experiment, we measured the photodiode voltage (which is proportional to light intensity) while rotating the polarizing filter. We started with no current through the solenoid and an angle of 90$^{\circ}$ between the polarized laser and the polarizing filter. We found this angle by observing where our intensity and measured voltage were at a minimum. We called this a relative angle of 0$^{\circ}$. We then measured the voltage every 10$^{\circ}$ for a single rotation (360$^{\circ}$). For this experiment we set the computer program to average over 16 values for each data point. We repeated this measurement for currents of I = 1A, I = 2A and I = 3A. 
+For our fist experiment, which we called the changing theta experiment, we measured the photodiode voltage (which is proportional to light intensity) while rotating the polarizing filter. We started with no current through the solenoid and an angle of 90$^{\circ}$ between the polarized laser and the polarizing filter. The difference in angle between the polarization of the laser and the polarization of the filter is referred to as the relative angle throughout this paper. We found where the relative angle was 90$^{\circ}$ by observing where our intensity and measured voltage were at a minimum. We then measured the voltage every 10$^{\circ}$ for a single rotation (360$^{\circ}$). For this experiment we set the computer program to average over 16 values for each data point. We repeated this measurement for currents of I = 1A, I = 2A and I = 3A. 
 
 For our second (changing field) experiment, we set our relative angle to 45$^{\circ}$. We chose this angle because at 45$^{\circ}$ the slope of the intensity versus angle is steepest. This means that a change in polarization angle leads to the largest change in intensity when the relative angle is 45$^{\circ}$. We then measured the photodiode voltage for currents 0A, $\pm$ 0.5A, $\pm$1A, $\pm$1.5A, $\pm$2A, $\pm$2.5A and $\pm$3A. For each change in current the initial voltage reading would drift as the solenoid heated and resistance changed. We allowed the voltage to stabilize before starting data collection. For this experiment we set the computer program to average over 100 values for each data point.
 
@@ -74,7 +74,7 @@ From the changing theta experiment, we got 36 data points for each current, i.e.
 \begin{figure}[h!]
 \centering
 \includegraphics{V_ThetaRel_Plot.pdf}[width=6in]
-\caption{Photodiode voltage (proportional to light intensity) plotted against relative angle from 0 to $\pi$ radians.  The red points are the measurements taken without a current in the solenoid, the orange points were taken with 1A of current, the green points with the current at 2A, and the blue points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) - A$. Faraday Rotation explains the phase shifts between the curve fits.
+\caption{Photodiode voltage (proportional to light intensity) plotted against relative angle from $-\frac{\pi}{2} to\frac{\pi}{2}$ radians.  The red points are the measurements taken without a current in the solenoid, the blue points were taken with 1A of current, the green points with the current at 2A, and the orange points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) $. Faraday Rotation explains the phase shifts between the curve fits.
 \label{V_ThetaRel_Plot}
 \end{figure}
 
@@ -107,7 +107,7 @@ Current (A) & Voltage (V) & Error Voltage (V)\\
 
 \section{Analysis}
 
-We analyzed the data from both experiments separately to obtain two estimates for the Verdet Constant.  For the changing theta experiment, we used IgorPro to fit the function $V = A \cos ^2 (\theta + C) - A$ to the data in Figure ~\ref{V_ThetaRel_Plot}.  We then calculated the magnetic field from the applied current and our measurements for field at 2A, and the phase shift from the difference between the c-values of the curve fits.  The results are in Table ~\ref{B*L_PhaseShift_Table}.  
+We analyzed the data from both experiments separately to calculate two values for the Verdet Constant.  For the changing theta experiment, we used IgorPro to fit the function $V = A \cos ^2 (\theta + C)$ to the data in Figure ~\ref{V_ThetaRel_Plot}.  We then calculated the magnetic field from the applied current and our measurements of magnetic field for a current of 2A. The phase shift values are the difference between the C-values of the curve fits.  The results are in Table ~\ref{B*L_PhaseShift_Table}.  
 
 \begin{table}[h!]
 \centering
@@ -125,16 +125,16 @@ I (A) & BL (mT cm) & $\delta$BL (mT cm) & C (rad)& $\delta$C (rad) & $\Delta \th
 \label{B*L_PhaseShift_Table}
 \end{table}
 
-We then plotted the phase shift versus the magnetic field multiplied by the length of our rod, which gave us Figure ~\ref{PhaseShift_B*L_Plot}. From the theory we know that $\Delta \theta = v_c B L$ therefore we would expect our data to be linear and the Verdet constant to be the slope.
+We then plotted the phase shifts versus the magnetic field multiplied by the length of our rod, which gave us Figure ~\ref{PhaseShift_B*L_Plot}. From the theory we know that $\Delta \theta = v_c B L$ therefore we would expect our data to be linear and the Verdet constant to be the slope.
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=5in]{PhaseShift_B-L_Plot.pdf}
-\caption{A plot of Table \ref{B*L_PhaseShift_Table}, applied magnetic field (times length of the refracting material) versus the resulting phase shift in the polarization of the laser beam. The slope of a linear curve fit of this plot gives a value for the Verdet constant of the material. }
+\caption{A plot of Table \ref{B*L_PhaseShift_Table}, applied magnetic field (times length of the birefringent material) versus the resulting phase shift in the polarization of the light. The slope of a linear fit of this plot gives a value for the Verdet constant of the glass rod. }
 \label{PhaseShift_B*L_Plot}
 \end{figure}
 
-From the linear fit of our plot we obtained a slope $19.5 \pm0.9 \frac{1}{Tm}$.
+From the linear fit of our plot we obtained a slope $19.5 \pm0.9 \frac{rad}{Tm}$.
 
 To get the Verdet constant from our changing field experiment, we first calculated the values of magnetic field times length for currents from -3A to 3A in steps of 0.5As. As before we calculated the field from our measured field for 2A and the linear relationship between field and current. The results are in Table ~\ref{V_B*L_Table}. 
 
@@ -174,9 +174,9 @@ We plotted the results of Table ~\ref{V_B*L_Table} in Figure ~\ref{V_B*L_Plot}. 
 
 Since, as shown above $v_c = \frac{\delta \theta}{\delta BL}$, we can use the chain rule for derivatives and get: 
 \\
-$\frac{\delta V}{\delta BL} = \frac{\delta V}{\delta \theta} \frac{\delta \theta}{\delta BL} = \frac{\delta V}{\delta \theta} v_c$.  
+$\frac{ dV}{ dBL} = \frac{dV}{d\theta} \frac{d\theta}{dBL} = \frac{dV}{d\theta} v_c$.  
 \\
-Therefore $v_c = \frac{\frac{\delta V}{\delta BL}}{\frac{\delta V}{\delta \theta}}$.
+Therefore $v_c = \frac{\frac{dV}{dBL}}{\frac{dV}{d\theta}}$.
 \\
 From Figure ~\ref{V_B*L_Plot} we got $\frac{\delta V}{\delta BL} = 0.0012018 \pm 1.8 \times 10^{-6}$. To get $\frac{\delta V}{\delta \theta}$, we took the derivative of the function $V = A \cos^{2}(\theta) - A$ at $\theta = \pi/4$ and obtained $\frac{\delta V}{\delta \theta} = -A$, and from the fit to the zero field data in Figure ~\ref{V_ThetaRel_Plot}, $-A = 6.285 \pm 0.008 V$.  
 
