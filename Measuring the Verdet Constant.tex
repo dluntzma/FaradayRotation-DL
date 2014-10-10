@@ -31,7 +31,7 @@
 
 \begin{abstract}
 
-Faraday was the first experimentally observe that light and magnetic field were related. The effect, which bears his name, is a phase shift in the polarization of light due to propagation through a birefringent material in a magnetic field. We observed Faraday Rotation by calculating the polarization of red (650nm) light from a polarized laser propagating through SF-59 glass in various magnetic fields. We determined the Verdet constant, a material specific proportion between magnetic field, length and phase shift. For two different experiments we calculated the Verdet constant for the SF-59 glass rod to be 19.5 $\pm$0.9 $\frac{rad}{Tm}$ and 19.12 $\pm$0.05 $\frac{rad}{Tm}$. These values agree with each other and with the values found by our peer performing similar experiments.
+Faraday was the first to experimentally observe that light and magnetic field were related. The Faraday effect, which bears his name, is a phase shift in the polarization of light due to propagation through a birefringent material in a magnetic field. We observed Faraday Rotation by calculating the change in polarization angle of red (670nm) light from a polarized laser propagating through SF-59 glass in various magnetic fields. We determined the Verdet constant, a material-specific proportion between the applied magnetic field, the length of the birefringent material, and the phase shift in the light's polarization angle. Using two different experiments, we calculated the Verdet constant of the SF-59 glass rod. Our first experiment involved rotating a polarizing filter in the path of the light and plotting the light intensity, then comparing the curves for different magnetic fields.  As the field changed, the curve shifted due to the change in the light's polarization angle, and we calculated the Verdet constant from these phase shifts.  In the second experiment, we fixed the polarization filter at $45^{\circ}$ relative to the light's polarization angle, and measured intensity for several fields.  From this data we calculated the Verdet constant a second time using a less direct approach.  In the first experiment, we obtained a value for the Verdet constant of 19.5 $\pm$0.9 $\frac{rad}{Tm}$ and in the second we obtained 19.12 $\pm$0.05 $\frac{rad}{Tm}$. These values agree with each other and with the values found by our peers performing similar experiments. We concluded that both approaches allow for a decent measure of the Verdet constant of a material, and that the second, less direct approach gives a more precise value. 
 
 \end{abstract}
 
@@ -41,9 +41,9 @@ Faraday was the first experimentally observe that light and magnetic field were 
 \section{Introduction} % Section titles are automatically converted to all-caps.
 % Section numbering is automatic.
 
-Faraday Rotation refers a phenomenon first observed by Faraday in 1945. It was a landmark discovery because it was the first link between light and magnetism.~\cite{teachspin} Faraday discovered that polarized light propagating through certain materials while in a magnetic field experienced a shift in the polarization angle. This effect occurs in materials which have different refractive indices for left circularly polarized (LCP) light and right circularly polarized (RCP) light when they are in a magnetic field. These materials are called birefringent. Light can be written as the vector sum of LCP and RCP components; when it propagates through the material its components experience different phase shifts leading to a total phase shift in the light's polarization.~\cite{melissanos} The magnitude of the phase shift depends on three factors: the strength of the magnetic field, the distance that the light travels in the material and the properties of the material itself. The phase shift for a specific material is given by the Verdet constant ($v_c$) which has units of $\frac{\text{radians}}{\text{tesla\ meter}}$. Thus the equation for total phase shift is $\Delta \theta = v_c B L$.
+Faraday Rotation refers a phenomenon first observed by Faraday in 1945. It was a landmark discovery, because Faraday theorized and demonstrated the first link between light and magnetism.~\cite{teachspin} Faraday discovered that polarized light propagating through certain materials while in a magnetic field experienced a shift in the polarization angle. This effect occurs in materials which have different refractive indices for left circularly polarized (LCP) light and right circularly polarized (RCP) light when they are in a magnetic field. These materials are called birefringent. Polarized light can be written as the vector sum of LCP and RCP components; when it propagates through a birefringent material, therefore, its components experience different phase shifts leading to a total phase shift in the light's polarization.~\cite{melissanos} The magnitude of the phase shift depends on three factors: the strength of the magnetic field, the distance that the light travels in the material and the properties of the material itself. The phase shift which will result from propogation through a specific material, for a given magnetic field and length of material, is given by the Verdet constant ($v_c$) which has units of $\frac{\text{radians}}{\text{tesla\ meter}}$. Thus the equation for total phase shift is $\Delta \theta = v_c B L$.
 
-In this paper, we measure the Verdet constant of SF-59 glass using the linear relationship expected between phase shift and magnetic field. We performed a second experiment to confirm the value we found for the Verdet constant in our first experiment.
+In this paper, we measure the Verdet constant of SF-59 glass using the expected linear relationship between phase shift and magnetic field. We also describe a second experiment which we performed to confirm the value we obtained in our first experiment.
 
 \section{Methods}
 
@@ -69,12 +69,14 @@ For our second (changing field) experiment, we set our relative angle to 45$^{\c
 
 \section{Results}
 
-From the changing theta experiment, we got 36 data points for each current, i.e. 0A, 1A, 2A, and 3A, shown in Figure ~\ref{V_ThetaRel_Plot}. The red points are the measurements taken without a magnetic field, the orange points were taken with 1A of current passing through the solenoid, the green points with the current at 2A, and the blue points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) - A$, with $A$ held constant at 6.2845 V (obtained from the first curve fit), and $C$ calculated by the curve fit. We are interested in the change in $C$ between curve fits because this gives us the change in the relative angle caused by applying a range of magnetic fields. The uncertainty in relative angle is due to difficulty reading the increments on the polarizing filter. The uncertainty in photodiode voltage is the standard divination of the mean and is too small to be seen in Figure ~\ref{V_ThetaRel.pdf}.
+From the changing theta experiment, we got 36 data points for each current, i.e. 0A, 1A, 2A, and 3A, shown in Figure ~\ref{V_ThetaRel_Plot}. The red points are the measurements taken without a magnetic field, the orange points were taken with 1A of current passing through the solenoid, the green points with the current at 2A, and the blue points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) - A$, with $A$ held constant at 6.2845 V (obtained from the first curve fit), and $C$ calculated by the curve fit. We are interested in the change in $C$ between curve fits because this gives us the change in the relative angle caused by applying a range of magnetic fields. The uncertainty in relative angle is due to difficulty reading the increments on the polarizing filter. The uncertainty in photodiode voltage is the standard divination of the mean and is too small to be seen in Figure ~\ref{V_ThetaRel_Plot}.
 
 \begin{figure}[h!]
 \centering
-\includegraphics{V_ThetaRel_Plot.pdf}[width=6in]
+
+\includegraphics[width=6in]{V_ThetaRel_Plot.pdf}
 \caption{Photodiode voltage (proportional to light intensity) plotted against relative angle from $-\frac{\pi}{2} to\frac{\pi}{2}$ radians.  The red points are the measurements taken without a current in the solenoid, the blue points were taken with 1A of current, the green points with the current at 2A, and the orange points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) $. Faraday Rotation explains the phase shifts between the curve fits.
+
 \label{V_ThetaRel_Plot}
 \end{figure}
 
@@ -82,24 +84,24 @@ From the measurements at a 45$^{\circ}$ relative angle while changing magnetic f
 
 \begin{table}[h!]
 \centering
-\caption{Voltage readings from the photodiode for various currents through the solenoid. }
+\caption{Voltage readings from the photodiode for various currents through the solenoid, with the magnetic fields produced by those currents. }
 \begin{ruledtabular}
-\begin{tabular}{c c c}
-Current (A) & Voltage (V) & Error Voltage (V)\\
+\begin{tabular}{c c c c c}
+Current (A) & Field (mT) & Error Field (mT) & Voltage (V) & Error Voltage (V)\\
 \hline	% horizontal line to separate headings from data
--3   & 2.822 & 1.30E-10 \\
--2.5 & 2.887 & 5.47E-10 \\
--2   & 2.951 & 3.72E-10 \\
--1.5 & 3.016 & 3.78E-11 \\
--1   & 3.082 & 8.98E-10 \\
--0.5 & 3.145 & 9.03E-10 \\
-0    & 3.211 & 1.18E-09 \\
-0.5  & 3.272 & 1.16E-10 \\
-1    & 3.338 & 2.05E-09 \\
-1.5  & 3.404 & 2.13E-09 \\
-2    & 3.468 & 6.96E-10 \\
-2.5  & 3.534 & 1.12E-09 \\
-3    & 3.599 & 1.05E-09
+-3   & -31.8 & -1 & 2.822 & 1.30E-10 \\
+-2.5 & -26.5 & -0.9 & 2.887 & 5.47E-10 \\
+-2   & -21.2 & -0.7 & 2.951 & 3.72E-10 \\
+-1.5 & -15.9 & -0.5 & 3.016 & 3.78E-11 \\
+-1   & -10.6 & -0.3 & 3.082 & 8.98E-10 \\
+-0.5 & -5.3 & -0.15 & 3.145 & 9.03E-10 \\
+0 & 0 & 0 & 3.211 & 1.18E-09 \\
+0.5  & 5.3 & 0.15 & 3.272 & 1.16E-10 \\
+1    & 10.6 & 0.3 & 3.338 & 2.05E-09 \\
+1.5  & 15.9 & 0.5 & 3.404 & 2.13E-09 \\
+2    & 21.2 & 0.7 & 3.468 & 6.96E-10 \\
+2.5  & 26.5 & 0.9 & 3.534 & 1.12E-09 \\
+3    & 31.8 & 1 & 3.599 & 1.05E-09
 \end{tabular}
 \end{ruledtabular}
 \label{V_I_Table}
