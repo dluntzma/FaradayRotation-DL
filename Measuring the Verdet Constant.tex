@@ -31,7 +31,7 @@
 
 \begin{abstract}
 
-Faraday was the first to experimentally observe that light and magnetic field were related. The Faraday effect, which bears his name, is a phase shift in the polarization of light due to propagation through a birefringent material in a magnetic field. We observed Faraday Rotation by calculating the change in polarization angle of red (670nm) light from a polarized laser propagating through SF-59 glass in various magnetic fields. We determined the Verdet constant, a material-specific proportion between the applied magnetic field, the length of the birefringent material, and the phase shift in the light's polarization angle. Using two different experiments, we calculated the Verdet constant of the SF-59 glass rod. In our first experiment we measured the phase shift in an intensity versus angle plot for different magnetic fields.  In the second experiment, we fixed the polarization filter at $45^{\circ}$ relative to the light's polarization angle, and measured intensity for several fields. In the first experiment, we obtained a value for the Verdet constant of 19.5 $\pm$0.9 $\frac{rad}{Tm}$ and in the second we obtained 19.12 $\pm$0.05 $\frac{rad}{Tm}$. These values agree with each other and with the values found by our peers performing similar experiments. 
+Faraday was the first to experimentally observe that light and magnetic fields were related. The Faraday effect is a phase shift in the polarization of light due to propagation through a birefringent material in a magnetic field. We observed Faraday Rotation by calculating the change in polarization angle of red (670nm) light from a polarized laser propagating through SF-59 glass in various magnetic fields. We determined the Verdet constant, a material-specific proportion between the applied magnetic field, the length of the birefringent material, and the phase shift in the light's polarization angle. Using two different experiments, we calculated the Verdet constant of the SF-59 glass rod. In our first experiment we measured the phase shift in an intensity versus angle plot for different magnetic fields.  In the second experiment, we fixed the polarization filter at $45^{\circ}$ relative to the light's polarization angle, and measured intensity for several fields. In the first experiment, we obtained a value for the Verdet constant of 19.5 $\pm$0.9 $\frac{rad}{Tm}$ and in the second we obtained 19.12 $\pm$0.05 $\frac{rad}{Tm}$. These values agree with each other and with the values found by our peers performing similar experiments. 
 
 \end{abstract}
 
@@ -174,12 +174,15 @@ We then plotted the results of Table ~\ref{V_I_Table} in Figure ~\ref{V_B*L_Plot
 \label{V_B*L_Plot}
 \end{figure}
 
-Since, as shown above $v_c = \frac{\delta \theta}{\delta BL}$, we can use the chain rule for derivatives and get: 
-\\
-$\frac{ dV}{ dBL} = \frac{dV}{d\theta} \frac{d\theta}{dBL} = \frac{dV}{d\theta} v_c$.  
-\\
-Therefore $v_c = \frac{\frac{dV}{dBL}}{\frac{dV}{d\theta}}$.
-\\
+Since, as shown above, $v_c = \frac{d \theta}{dBL}$, we can use the chain rule for derivatives and get: 
+\begin{equation}
+\frac{ dV}{ dBL} = \frac{dV}{d\theta} \frac{d\theta}{dBL} = \frac{dV}{d\theta} v_c
+\end{equation}
+Therefore 
+\begin{equation} 
+v_c = \frac{\frac{dV}{dBL}}{\frac{dV}{d\theta}}
+\end{equation}
+
 From Figure ~\ref{V_B*L_Plot} we got $\frac{dV}{dBL} = 0.0012018 \pm 1.8 \times 10^{-6}$. To get $\frac{dV}{d\theta}$, we took the derivative of the function $V = A \cos^{2}(\theta)$ at $\theta = \pi/4$ and obtained $\frac{dV}{d\theta} = -A$, and from the fit to the zero field data in Figure ~\ref{V_ThetaRel_Plot}, $A = 6.285 \pm 0.008 \frac{V}{mT\ cm}$.  
 
 Dividing these two results, we get $v_c = \frac{\frac{dV}{dBL}}{\frac{dV}{d\theta}} = 19.12 \pm 0.05 \frac{rad}{Tm}$.  
