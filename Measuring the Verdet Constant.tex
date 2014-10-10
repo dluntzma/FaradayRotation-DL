@@ -52,16 +52,16 @@ Our experimental setup was based off the TeachSpin teaching manual. ~\cite{teach
 \begin{figure}[h!]
 \centering
 \includegraphics[width=6in]{Faraday_lab_set-up.pdf}
-\caption{The set-up of our experiment. The light source was a laser, powered by a function generator. We sent the beam through a solenoid containing the glass rod and a polarization filter. A photodiode at the other end measured the light intensity and outputted a voltage. This signal went through a pre-amp, bandpass and lock-in detector to remove offsets due to ambient light and photodiode drift. The much clearer signal was then measured with a multimeter connected to a computer.}
+\caption{The set-up of our experiment. The light source was a laser, powered by a function generator. We sent the beam through a solenoid containing the glass rod and then through a polarization filter. A photodiode at the other end measured the light intensity and outputted a voltage. This signal went through a pre-amp, bandpass and lock-in detector to remove offsets due to ambient light and photodiode drift. The much clearer signal was then measured with a multimeter connected to a computer.}
 \label{set-up}
 \end{figure}
 
 
 Our power source to the solenoid was a Keithley 2230-30-1 Triple Channel DC Power Supply which we used on current control throughout our experiments. We connected the two 3 volt terminals in parallel so that we could obtain a maximum current of 3 amps through the solenoid. By varying the current through the solenoid we could change the magnetic field through the glass rod. We measured the magnetic field using a TEL-Atomic Inc. Smart Magnetic Sensor for a current of 2A and obtained a field of 21.8mT at the center of solenoid decreasing to 20.5mT at the edges of the glass rod. We took the average of this rage to be our best value and difference between high and low values divided by two to be our uncertainty. To obtain field values for other currents we exploited the linear relationship between magnetic field and current.
 
-We used a 650 nm diode laser powered by a Rigol DG1022A function generator. From the function generator we obtained a square wave which turned the laser on and off at frequency of 400Hz. After passing through the solenoid, the light passed through a polarizing filter before being measured by a photodiode. The output of the photodiode was a voltage that contained significant noise and offsets due to the ambient light of the room and the drift of the photodiode.  To remove the noise and offsets, the signal from the photodiode was run through a preamp, a bandpass filter and a lock-in detector. The preamp was with respect to ground. The bandpass filter removed frequencies both higher and lower than our signal and ensured that we had only the first harmonic. Finally, we used lock-in detector to select the specific frequency and phase of our signal. The final signal was had very little noise and was stable even when the room lights were turned off and on.
+We used a 670 nm diode laser powered by a Rigol DG1022A function generator. From the function generator we obtained a square wave which turned the laser on and off at frequency of 400Hz. After passing through the solenoid, the light passed through a polarizing filter before being measured by a photodiode. The output of the photodiode was a voltage that contained significant noise and offsets due to the ambient light of the room and the drift of the photodiode.  To remove the noise and offsets, the signal from the photodiode was run through a preamp, a bandpass filter and a lock-in detector. The preamp was with respect to ground. The bandpass filter removed frequencies both higher and lower than our signal and ensured that we had only the first harmonic. Finally, we used lock-in detector to select the specific frequency and phase of our signal. The final signal was had very little noise and was stable even when the room lights were turned off and on.
 
-The final signal from the lock-in detector was then measured with a Keithley 2100 DMM. To facilitate data collection we used a computer program (helpfully provided by our instructors) called "Keithley DC Incremental Write." The program would record a specified number of values for voltage then average them to obtain a single data point. Therefore, our results for each point were the mean of the measured points at that intensity with an uncertainty given as the standard divination of the mean. 
+The final signal from the lock-in detector was then measured with a Keithley 2100 DMM. To facilitate data collection we used a computer program (helpfully provided by our instructors) called "Keithley DC Incremental Write." The program would record a specified number of values for voltage then average them to obtain a single data point. Therefore, our results for each point were the mean of the measured points at that intensity with an uncertainty given as the standard deviation of the mean. 
 
 For our fist experiment, which we called the changing theta experiment, we measured the photodiode voltage (which is proportional to light intensity) while rotating the polarizing filter. We started with no current through the solenoid and an angle of 90$^{\circ}$ between the polarized laser and the polarizing filter. The difference in angle between the polarization of the laser and the polarization of the filter is referred to as the relative angle throughout this paper. We found where the relative angle was 90$^{\circ}$ by observing where our intensity and measured voltage were at a minimum. We then measured the voltage every 10$^{\circ}$ for a single rotation (360$^{\circ}$). For this experiment we set the computer program to average over 16 values for each data point. We repeated this measurement for currents of I = 1A, I = 2A and I = 3A. 
 
@@ -69,7 +69,7 @@ For our second (changing field) experiment, we set our relative angle to 45$^{\c
 
 \section{Results}
 
-From the changing theta experiment, we got 36 data points for each current, i.e. 0A, 1A, 2A, and 3A, shown in Figure ~\ref{V_ThetaRel_Plot}. The red points are the measurements taken without a magnetic field, the orange points were taken with 1A of current passing through the solenoid, the green points with the current at 2A, and the blue points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C)$, with $A$ held constant at 6.2845 V (obtained from the first curve fit), and $C$ calculated by the curve fit. We are interested in the change in $C$ between curve fits because this gives us the change in the relative angle caused by applying a range of magnetic fields. The uncertainty in relative angle is due to difficulty reading the increments on the polarizing filter. The uncertainty in photodiode voltage is the standard divination of the mean and is too small to be seen in Figure ~\ref{V_ThetaRel_Plot}.
+From the changing theta experiment, we got 36 data points for each current, i.e. 0A, 1A, 2A, and 3A, shown in Figure ~\ref{V_ThetaRel_Plot}. The red points are the measurements taken without a magnetic field, the blue points were taken with 1A of current passing through the solenoid, the green points with the current at 2A, and the orange points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C)$, with $A$ held constant at 6.2845 V (obtained from the first curve fit), and $C$ calculated by the curve fit. We are interested in the change in $C$ between curve fits because this gives us the change in the relative angle caused by applying a range of magnetic fields. The uncertainty in relative angle is due to difficulty reading the increments on the polarizing filter. The uncertainty in photodiode voltage is the standard deviation of the mean and is too small to be seen in Figure ~\ref{V_ThetaRel_Plot}.
 
 \begin{figure}[h!]
 \centering
@@ -80,7 +80,7 @@ From the changing theta experiment, we got 36 data points for each current, i.e.
 \label{V_ThetaRel_Plot}
 \end{figure}
 
-From the measurements at a 45$^{\circ}$ relative angle while changing magnetic field, we obtained the results shown in Table ~\ref{V_I_Table}. Uncertainty in voltage is again the standard divination of the mean.
+From the measurements at a 45$^{\circ}$ relative angle while changing magnetic field, we obtained the results shown in Table ~\ref{V_I_Table}. Uncertainty in voltage is again the standard deviation of the mean.
 
 \begin{table}[h!]
 \centering
@@ -174,6 +174,7 @@ We then plotted the results of Table ~\ref{V_I_Table} in Figure ~\ref{V_B*L_Plot
 \label{V_B*L_Plot}
 \end{figure}
 
+
 Since, as shown above, $v_c = \frac{d \theta}{dBL}$, we can use the chain rule for derivatives and get: 
 \begin{equation}
 \frac{ dV}{ dBL} = \frac{dV}{d\theta} \frac{d\theta}{dBL} = \frac{dV}{d\theta} v_c
@@ -185,7 +186,7 @@ v_c = \frac{\frac{dV}{dBL}}{\frac{dV}{d\theta}}
 
 From Figure ~\ref{V_B*L_Plot} we got $\frac{dV}{dBL} = 0.0012018 \pm 1.8 \times 10^{-6}$. To get $\frac{dV}{d\theta}$, we took the derivative of the function $V = A \cos^{2}(\theta)$ at $\theta = \pi/4$ and obtained $\frac{dV}{d\theta} = -A$, and from the fit to the zero field data in Figure ~\ref{V_ThetaRel_Plot}, $A = 6.285 \pm 0.008 \frac{V}{mT\ cm}$.  
 
-Dividing these two results, we get $v_c = \frac{\frac{dV}{dBL}}{\frac{dV}{d\theta}} = 19.12 \pm 0.05 \frac{rad}{Tm}$.  
+Dividing these two results, we get $v_c = \frac{dV}{dBL} \div \frac{dV}{d\theta} = 19.12 \pm 0.05 \frac{rad}{Tm}$.  
 
 %\begin{table}[h!]
 %\centering
