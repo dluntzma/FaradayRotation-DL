@@ -89,9 +89,14 @@ The final signal from the lock-in detector was then measured with a Keithley 210
 \textcolor{red}{Example: ``quotation'' has the word quotation in quotes. }
 
 
-For our \textcolor{red}{fist} experiment, which we called the changing theta experiment, we measured the photodiode voltage (which is proportional to light intensity) while rotating the polarizing filter. We started with no current through the solenoid and an angle of 90$^{\circ}$ between the polarized laser and the polarizing filter. The difference in angle between the polarization of the laser and the polarization of the filter is referred to as the relative angle throughout this paper. We found where the relative angle was 90$^{\circ}$ by observing where our intensity and measured voltage were at a minimum. We then measured the voltage every 10$^{\circ}$ for a single rotation (360$^{\circ}$). For this experiment we set the computer program to average over 16 values for each data point. We repeated this measurement for currents of I = 1A, I = 2A and I = 3A. 
+For our \textcolor{red}{fist} experiment, which we called the changing theta experiment, we measured the photodiode voltage (which is proportional to light intensity) \textcolor{red}{while rotating the polarizing filter}. We started with no current through the solenoid and an angle of 90$^{\circ}$ between the polarized laser and the polarizing filter. The difference in angle between the polarization of the laser and the polarization of the filter is referred to as the relative angle throughout this paper. We found where the relative angle was 90$^{\circ}$ by observing where our intensity and measured voltage were at a minimum. We then measured the voltage every 10$^{\circ}$ for a single rotation (360$^{\circ}$). For this experiment we set the computer program to average over 16 values for each data point. We repeated this measurement for currents of I = 1A, I = 2A and I = 3A. 
+
+\textcolor{blue}{You haven't defined theta at this point. You either need to introduce the $V = A \cos^{2} (\theta + theta_0)$ equation earlier or give it a different name, such as `changing polarizer angle' experiment or 'fixed field' experiment. }
+
+Also, instead of \textcolor{red}{while rotating the polarizing filter} consider \textcolor{blue}{as a function of polarizer angle, while holding the magnetic field steady}.
 
 For our second (changing field) experiment, we set our relative angle to 45$^{\circ}$. We chose this angle because at 45$^{\circ}$ the slope of the intensity versus angle is steepest. This means that a change in polarization angle leads to the largest change in intensity when the relative angle is 45$^{\circ}$. We then measured the photodiode voltage for currents 0A, $\pm$ 0.5A, $\pm$1A, $\pm$1.5A, $\pm$2A, $\pm$2.5A and $\pm$3A. For each change in current the initial voltage reading would drift as the solenoid heated and resistance changed. We allowed the voltage to stabilize before starting data collection. For this experiment we set the computer program to average over 100 values for each data point.
+
 
 \section{Results}
 
@@ -110,7 +115,7 @@ From the measurements at a 45$^{\circ}$ relative angle while changing magnetic f
 
 \begin{table}[h!]
 \centering
-\caption{Voltage readings from the photodiode for various currents through the solenoid, with the magnetic fields produced by those currents. }
+\caption{Voltage readings from the photodiode for various currents through the solenoid \textcolor{red}{for the ??? experiment}, with the magnetic fields produced by those currents. \textcolor{blue}{Need to make clear which experiment this data is from! One way would be to add ``at a fixed relative polarizer angle of 45 degrees.''} }
 \begin{ruledtabular}
 \begin{tabular}{c c c c c}
 Current (A) & Field (mT) & Error Field (mT) & Voltage (V) & Error Voltage (V)\\
@@ -133,10 +138,13 @@ Current (A) & Field (mT) & Error Field (mT) & Voltage (V) & Error Voltage (V)\\
 \label{V_I_Table}
 \end{table}
 
+\textcolor{blue}{The error voltage values in Table 1 seem unbelievable. Do you really have 1 part in $10^9$ precision?} 
+
 \section{Analysis}
 
+\subsection{changing theta experiment}
 We analyzed the data from both experiments separately to calculate two values for the Verdet Constant.  For the changing theta experiment, we used IgorPro to fit the function $V = A \cos ^2 (\theta + C)$ to the data in Figure ~\ref{V_ThetaRel_Plot}.  We then calculated the magnetic field from the applied current and our measurements of magnetic field for a current of 2A. The phase shift values are the difference between the C-values of the curve fits.  The results are in Table ~\ref{B*L_PhaseShift_Table}.  
-
+\
 \begin{table}[h!]
 \centering
 \caption{Curve fit data and calculated phase shifts for changing angle experiment, with magnetic fields calculated from the applied currents.}
@@ -153,7 +161,12 @@ I (A) & BL (mT cm) & $\delta$BL (mT cm) & C (rad)& $\delta$C (rad) & $\Delta \th
 \label{B*L_PhaseShift_Table}
 \end{table}
 
-We then plotted the phase shifts versus the magnetic field multiplied by the length of our rod, which gave us Figure ~\ref{PhaseShift_B*L_Plot}. From the theory we know that $\Delta \theta = v_c B L$ therefore we would expect our data to be linear and the Verdet constant to be the slope.
+\textcolor{blue}{Need an explanation here of how the error in $BL$ was determined from $\delta \Delta \theta$  and  $V = A \cos ^2 (\theta + C)$. }
+
+
+We then plotted the phase shifts versus the magnetic field multiplied by the length of our rod, which gave us Figure ~\ref{PhaseShift_B*L_Plot}. From the theory we know that $\Delta \theta = v_c B L$ therefore we would expect our data to be linear and the Verdet constant to be the slope. From the linear fit of our plot we obtained a slope $19.5 \pm0.9 \frac{rad}{Tm}$.
+
+\textcolor{blue}{Does your attempted fit to a linear relationship confirm your expectation of a linear dependence? That is, is it consistent with your data within error? then be proud, and say so! } 
 
 \begin{figure}[h!]
 \centering
@@ -162,7 +175,8 @@ We then plotted the phase shifts versus the magnetic field multiplied by the len
 \label{PhaseShift_B*L_Plot}
 \end{figure}
 
-From the linear fit of our plot we obtained a slope $19.5 \pm0.9 \frac{rad}{Tm}$.
+
+\subsection{changing field experiment}
 
 To get the Verdet constant from our changing field experiment, we first calculated the values of magnetic field times length for currents from -3A to 3A in steps of 0.5As, see Figure ~\ref{V_I_Table}. As before we calculated the field from our measured field for 2A and the linear relationship between field and current. We multiplied the magnetic field by the length of our glass rod (L = 10.15 cm) to get values for BL. 
 
@@ -214,6 +228,8 @@ From Figure ~\ref{V_B*L_Plot} we got $\frac{dV}{dBL} = 0.0012018 \pm 1.8 \times 
 
 Dividing these two results, we get $v_c = \frac{dV}{dBL} \div \frac{dV}{d\theta} = 19.12 \pm 0.05 \frac{rad}{Tm}$.  
 
+\textcolor{blue}{Is this consistent with your expectation and your other method?  then be proud, and briefly say so! } 
+
 %\begin{table}[h!]
 %\centering
 %\caption{C values taken from the curve fits to Figure ~\ref{V_ThetaRel_Plot}}
@@ -235,11 +251,13 @@ Dividing these two results, we get $v_c = \frac{dV}{dBL} \div \frac{dV}{d\theta}
 
 \section{Discussion}
 
-All of our data fit the expected relationships. In Figure ~\ref{V_ThetaRel_Plot} the intensity of the light, given by voltage from the photodiode, showed a $\cos^2\theta$ relationship with the relative angle between as was expected. For the changing theta experiment the relationship between phase shift and magnetic field had a constant, positive slope, Figure ~\ref{PhaseShift_B*L_Plot}, which is reassuring since slope should be the Verdet constant, a constant positive value.  For the changing field experiment we expect intensity to depend linearly on field because a change in field causes a proportional change in phase shift and the relationship between intensity, i.e. voltage, and phase shift to be linear for small changes in phase. The values that we obtained for the Verdet constant from both experiments agreed with each other within uncertainty. Further they are within the range of values obtained by our peers performing similar experiments.
+\textcolor{red}{vague: All of our data fit the expected relationships}. \textcolor{blue}{consider: our experimental results are consistent with theoretical expectations, or, are consistent with each other, or, whatever it is you mean, more specifically}.  In Figure ~\ref{V_ThetaRel_Plot} the intensity of the light, given by voltage from the photodiode, showed a $\cos^2\theta$ relationship with the relative angle between as was expected. For the changing theta experiment the relationship between phase shift and magnetic field had a constant, positive slope, Figure ~\ref{PhaseShift_B*L_Plot}, which is reassuring since slope should be the Verdet constant, a constant positive value.  For the changing field experiment we expect intensity to depend linearly on field because a change in field causes a proportional change in phase shift and the relationship between intensity, i.e. voltage, and phase shift to be linear for small changes in phase. The values that we obtained for the Verdet constant from both experiments agreed with each other within uncertainty. Further they are within the range of values obtained by our peers performing similar experiments.
 
 The biggest sources of error in our experiments came from our measurement of the magnetic field and the imprecision of our angle measurement on the polarizing filter. To decrease error in future experiments we would suggest using a more accurate magnetic field sensor, and to measure the magnetic field for all currents used in the experiment. A more precise profile of magnetic field through the solenoid would also allow for integration of the field along the length of the material. This would give less uncertainty in B than the constant field approximation that we used. Finally, a polarizing filter that showed smaller increments for angle would help lower the uncertainty in relative angle. 
 
+\section{Conclusion}
 
+{\color{blue} This would be a good place to discuss the relative merits of the two measurement methods, which one is likely to have better accuracy, which one is likely to have better precision (remember the difference?), and which you would use for a follow on measurement of a material with a much smaller Verdet constant, for example. This would also be a good place to discuss how you might modify the experiment to measure the wavelength dependence, as well as to mention important technological applications of this effect (for example in chemistry and/or fiber optic telecommunications). }
 \begin{thebibliography}{3}
 
 \bibitem{melissanos} Adrian C. Melissanos and Jim Napoitano, \textit{Experiments in Modern Physics} 2nd edition (Academic Press, Boston, 2003)
