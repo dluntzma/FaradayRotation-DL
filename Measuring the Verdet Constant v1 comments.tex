@@ -1,0 +1,270 @@
+\documentclass[prb,preprint]{revtex4-1} 
+% The line above defines the type of LaTeX document.
+% Note that AJP uses the same style as Phys. Rev. B (prb).
+
+\usepackage{amsmath}  % needed for \tfrac, \bmatrix, etc.
+\usepackage{amsfonts} % needed for bold Greek, Fraktur, and blackboard bold
+\usepackage{graphicx} % needed for figures
+\usepackage{color}
+\usepackage{ulem}
+\begin{document}
+
+% Be sure to use the \title, \author, \affiliation, and \abstract macros
+% to format your title page.  Don't use lower-level macros to  manually
+% adjust the fonts and centering.
+
+\title{Measuring the Verdet Constant in SF-59 Glass}
+
+
+\author{Liza Mulder}
+\email{emulder@smith.edu}
+\affiliation{Department of Physics, Smith College, Northampton, MA 01063}
+
+
+\author{Danika Luntz-Martin}
+\email{dluntzma@smith.edu}
+\affiliation{Department of Physics, Smith College, Northampton, MA 01063}
+
+
+\date{\today}
+
+
+
+\begin{abstract}
+
+Faraday was the first to experimentally observe that light and magnetic fields were related. The \textcolor{magenta}{Faraday effect} is a phase shift in the polarization of light due to propagation through a birefringent material in a magnetic field. We observed \textcolor{magenta}{Faraday Rotation} by calculating the change in polarization angle of red (670nm) light from a polarized laser propagating through SF-59 glass in various magnetic fields. \textcolor{magenta}{insert sentence somewhere about second polarizer and its purpose}. \textcolor{blue}{insert sentence or two here about photodiode, linearity of photodiode response, and use of lock-in for phase-sensitivity detection at frequency of modulated laser light}. \textcolor{red}{ We determined the Verdet constant, a material-specific proportion between the applied magnetic field, the length of the birefringent material, and the phase shift in the light's polarization angle } \textbf{at this wavelength}. Using two different experiments, we calculated the Verdet constant of the SF-59 glass rod. In our first experiment we measured the phase shift in an intensity versus angle plot for different magnetic fields.  In the second experiment, we fixed the polarization filter at $45^{\circ}$ relative to the light's polarization angle, and measured intensity for several fields. In the first experiment, we obtained a value for the Verdet constant of 19.5 $\pm$0.9 $\frac{rad}{Tm}$ and in the second we obtained 19.12 $\pm$0.05 $\frac{rad}{Tm}$. These values agree with each other \textcolor{blue}{within the precision of our measurements} and \textcolor{blue}{are also in general agreement} with the values found by our peers performing similar experiments \textcolor{blue}{on the same material}. 
+
+{\color{blue}Comments on Abstract:
+\begin{enumerate}
+  \item  You should decide on whether you want to call it the \textcolor{magenta}{Faraday Effect} or the  \textcolor{magenta}{Faraday Rotation}, or if you want to use both terms, and define faraday rotation in terms of the faraday effect.   
+  \item Need sentence describing how you used a second polarizer to determine the angle of polarization (or relative angle of polarization, or shift in polarization) of the light from the change in light intensity after it passed through the material
+  \item Need a sentence or two explaining (1) how you detected the relative intensity of the polarized light by measuring the current output from a photodiode (or more specifically, the voltage drop across a 1 Kohm resistor in series with the photodiode) and (2) that the voltage output was proportional to the light intensity (as verified by experiment), and that (3) unwanted voltage offsets and fluctuations in measured light intensity with changes in room lighting were eliminated using by (square-wave) modulation of the laser output and phase-sensistive detection of the transmitted light at the modulation frequency (lock-in amplifier) or some similar language 
+  \item Your definition of the Verdet constant --- \textcolor{red}{see sentence highlighted in red} --- is difficult to follow, and you haven't given a clear reason why your would measure it. I assume it is because the Verdet constant characterizes the degree of rotation (or strength of the Faraday effect) for a particular material \textbf{for a particular wavelength of light}. Thinking about what the Verdet constant tells you should help you with your description.  Also, you haven't indicated that this so-called constant actually depends on the frequency of light passing through the material. 
+  \item Your description of the two experiments is also difficult to follow, and wouldn't be understood by someone who hasn't yet read your article or done the experiment.  To improve the clarity of your description, I suggest distinguishing between what you varied, what you measured, and what you calculated. For example, in the first of your two experiments, you didn't measure the phase shift in an intensity versus angle plot, you measured the sinusoidal variation of polarized light intensity as a function of polarizer angle for a series of magnetic fields ranging from -x tesla to +y tesla, and from that you determined the magnetic-field-dependent phase shift in polarization (or, if you prefer, the magnetic-field dependent change in polarization angle) upon passage through the glass.  
+  \end{enumerate}
+ }
+
+\end{abstract}
+
+\maketitle % title page is now complete
+
+
+\section{Introduction} % Section titles are automatically converted to all-caps.
+% Section numbering is automatic.
+
+\textcolor{magenta}{Faraday Rotation} refers a phenomenon first observed by Faraday in 1945. It was a landmark discovery, because Faraday theorized and demonstrated the first link between light and magnetism.~\cite{teachspin} Faraday discovered that polarized light propagating through certain materials while in a magnetic field experienced a shift in the polarization angle. This effect occurs in materials which have different refractive indices for left circularly polarized (LCP) light and right circularly polarized (RCP) light when they are in a magnetic field. These materials are called birefringent. Polarized light can be written as the vector sum of LCP and RCP components; when it propagates through a birefringent material, therefore, its components experience different phase shifts leading to a total phase shift in the light's polarization.~\cite{melissanos} The magnitude of the phase shift depends on three factors: the strength of the magnetic field, the distance that the light travels in the material and the properties of the material itself. The phase shift which will result from propogation through a specific material, for a given magnetic field and length of material, is given by the Verdet constant ($v_c$) which has units of $\frac{\text{radians}}{\text{tesla\ meter}}$. Thus the equation for total phase shift is $\Delta \theta = v_c B L$.
+
+
+
+In this paper, we measure the Verdet constant of SF-59 glass using the expected linear relationship between phase shift and magnetic field. We also describe a second experiment which we performed to confirm the value we obtained in our first experiment.
+{\color{blue}Comments on Introduction: very clear, except you haven't defined the variables used in your equation for phase shift. One way to do this is to follow your equation with the phrase ``where $v_c$ is the Verdet constant, $B$ is the .... etc.''  Another is to insert the symbol where you first mention it in words, such as ``The magnitude of the phase shift depends on three factors: the strength of the magnetic field $B$, the distance ....''}
+
+\section{Methods}
+
+Our experimental setup was based off the TeachSpin teaching manual.~\cite{teachspin} We used a TeachSpin FRI-A apparatus consisting of a diode laser, a solenoid, a polarizing filter and photodiode. To observe Faraday Rotation and measure the Verdet constant we used a SF-59 glass rod. SF-59 glass is heavy flint glass with a high lead content. The manufacturers dope silicone glass with lead because the high lead content increases the Verdet constant of the glass, making it easier to observe Faraday Rotation.\cite{opticalglass} We placed the glass rod in the center of the solenoid. The length of our rod was 5 cm shorter than the solenoid so that the magnetic field was approximately constant across the length of the rod and we could neglect the severe drop in magnetic field near the edges of the solenoid.
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=6in]{Faraday_lab_set-up.pdf}
+\caption{The set-up of our experiment. The light source was a laser, powered by a function generator. We sent the beam through a solenoid containing the glass rod and then through a polarization filter. A photodiode at the other end measured the light intensity and outputted a voltage. This signal went through a pre-amp, bandpass and lock-in detector to remove offsets due to ambient light and photodiode drift. The much clearer signal was then measured with a multimeter connected to a computer.}
+\label{set-up}
+\end{figure}
+
+
+Our power source to the solenoid was a Keithley 2230-30-1 Triple Channel DC Power Supply which we used on current control throughout our experiments. We connected the two \textcolor{magenta}{3 volt}  terminals in parallel so that we could obtain a maximum current of 3 amps through the solenoid. \textcolor{magenta}{3 V or 30 V?} By varying the current through the solenoid we could change the magnetic field through the glass rod. We measured the magnetic field using a TEL-Atomic Inc. Smart Magnetic Sensor for a current of 2A and obtained a field of 21.8mT at the center of solenoid decreasing to 20.5mT at the edges of the glass rod. We took the average of this rage to be our best value and difference between high and low values divided by two to be our uncertainty. To obtain field values for other currents we exploited the linear relationship between magnetic field and current.
+
+\textcolor{blue}{better than that simple average would be weighted average such as $\frac{1}{N} \sum_{x_1=-L/2}^{x_N = L/2}B(x_i)$  for equally spaced data measurements or  $\frac{1}{L} \int_{-L/2}^{L/2}B(x)dx$ (if you first fit your data to a smooth function for B(x). The difference between your simple aveage and these would be particularly important when measuring a liquid sample that extends outside the solenoid}
+
+
+\sout{We used a 670 nm diode laser powered by a Rigol DG1022A function generator. From the function generator we obtained a \textcolor{blue}{0 to 4 V} square wave which turned the laser on and off at frequency of 400Hz. } After passing through the solenoid, the \textcolor{blue}{polarized} light \textcolor{blue}{from a 4 volt 670 nm laser diode } passed through a \textcolor{blue}{second} polarizer before being measured by a photodiode. \textcolor{magenta}{Is the photodiode measuring the polarization or the light intensity? Be specific} The output of the photodiode was a voltage \textcolor{blue}{proportional to xxx?}  that contained significant noise and offsets due to \textcolor{blue}{changes in the intensity of} the ambient light of the room and the drift of the photodiode \textcolor{magenta}{is this drift due to something other than changes in ambient light? explain}.  To remove the noise and offsets, the \textcolor{red}{4 volt 670 nm laser diode polarized light source was square-wave modulated at a frequency of 400 Hz and the resulting measured signal} from the photodiode was run through a preamp, a bandpass filter and a lock-in detector. The preamp  was with respect to ground. \textcolor{magenta}{What does this mean? That you were using the pre-amp in single-ended A - ground instead of differential A - B mode?} The bandpass filter removed frequencies both higher and lower than our signal and ensured that we had only the first harmonic. Finally, we used lock-in detector to select the specific frequency and phase of our signal. The final signal had very little noise \textcolor{magenta}{can you be more specific by any chance? percent uncertainty? some other measure? } and was stable even when the room lights were turned off and on. 
+
+
+\textcolor{blue}{The paragraph above needs an introductory transition sentence. Why are we suddenly talking about how the laser is powered? You might consider making your third sentence your first. Also, might be clearer to first describe dc detection. }
+
+The final signal from the lock-in detector was then measured with a Keithley 2100 DMM. To facilitate data collection we used a computer program (helpfully provided by our instructors) called \textcolor{red}{"Keithley DC Incremental Write." }.  The program would record a specified number of values for voltage then average them to obtain a single data point. Therefore, our results for each point were the mean of the measured points at that intensity with an uncertainty given as the standard deviation of the mean. 
+
+\begin{verbatim}
+  use `` and '' to put a word or sentence in quotes. 
+\end{verbatim}
+\textcolor{red}{Example: ``quotation'' has the word quotation in quotes. }
+
+
+For our \textcolor{red}{fist} experiment, which we called the changing theta experiment, we measured the photodiode voltage (which is proportional to light intensity) \textcolor{red}{while rotating the polarizing filter}. We started with no current through the solenoid and an angle of 90$^{\circ}$ between the polarized laser and the polarizing filter. The difference in angle between the polarization of the laser and the polarization of the filter is referred to as the relative angle throughout this paper. We found where the relative angle was 90$^{\circ}$ by observing where our intensity and measured voltage were at a minimum. We then measured the voltage every 10$^{\circ}$ for a single rotation (360$^{\circ}$). For this experiment we set the computer program to average over 16 values for each data point. We repeated this measurement for currents of I = 1A, I = 2A and I = 3A. 
+
+\textcolor{blue}{You haven't defined theta at this point. You either need to introduce the $V = A \cos^{2} (\theta + theta_0)$ equation earlier or give it a different name, such as `changing polarizer angle' experiment or 'fixed field' experiment. }
+
+Also, instead of \textcolor{red}{while rotating the polarizing filter} consider \textcolor{blue}{as a function of polarizer angle, while holding the magnetic field steady}.
+
+For our second (changing field) experiment, we set our relative angle to 45$^{\circ}$. We chose this angle because at 45$^{\circ}$ the slope of the intensity versus angle is steepest. This means that a change in polarization angle leads to the largest change in intensity when the relative angle is 45$^{\circ}$. We then measured the photodiode voltage for currents 0A, $\pm$ 0.5A, $\pm$1A, $\pm$1.5A, $\pm$2A, $\pm$2.5A and $\pm$3A. For each change in current the initial voltage reading would drift as the solenoid heated and resistance changed. We allowed the voltage to stabilize before starting data collection. For this experiment we set the computer program to average over 100 values for each data point.
+
+
+\section{Results}
+
+From the changing theta experiment, we got 36 data points for each current, i.e. 0A, 1A, 2A, and 3A, shown in Figure ~\ref{V_ThetaRel_Plot}. The red points are the measurements taken without a magnetic field, the blue points were taken with 1A of current passing through the solenoid, the green points with the current at 2A, and the orange points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C)$, with $A$ held constant at 6.2845 V (obtained from the first curve fit), and $C$ calculated by the curve fit. We are interested in the change in $C$ between curve fits because this gives us the change in the relative angle caused by applying a range of magnetic fields. The uncertainty in relative angle is due to difficulty reading the increments on the polarizing filter. The uncertainty in photodiode voltage is the standard deviation of the mean and is too small to be seen in Figure ~\ref{V_ThetaRel_Plot}.
+
+\begin{figure}[h!]
+\centering
+
+\includegraphics[width=6in]{V_ThetaRel_Plot.pdf}
+\caption{Photodiode voltage (proportional to light intensity) plotted against relative angle from $-\frac{\pi}{2} \rm{\ to\ } \frac{\pi}{2}$ radians.  The red points are the measurements taken without a current in the solenoid, the blue points were taken with 1A of current, the green points with the current at 2A, and the orange points at 3A.  The curve fits are the function $V = A \cos^{2}(\theta + C) $. Faraday Rotation explains the phase shifts between the curve fits. \textcolor{blue}{do you mean between the curve fits or between data sets at different values of magnetic field}}
+
+\label{V_ThetaRel_Plot}
+\end{figure}
+
+From the measurements at a 45$^{\circ}$ relative angle while changing magnetic field, we obtained the results shown in Table ~\ref{V_I_Table}. Uncertainty in voltage is again the standard deviation of the mean.
+
+\begin{table}[h!]
+\centering
+\caption{Voltage readings from the photodiode for various currents through the solenoid \textcolor{red}{for the ??? experiment}, with the magnetic fields produced by those currents. \textcolor{blue}{Need to make clear which experiment this data is from! One way would be to add ``at a fixed relative polarizer angle of 45 degrees.''} }
+\begin{ruledtabular}
+\begin{tabular}{c c c c c}
+Current (A) & Field (mT) & Error Field (mT) & Voltage (V) & Error Voltage (V)\\
+\hline	% horizontal line to separate headings from data
+-3   & -31.8 & -1 & 2.822 & 1.30E-10 \\
+-2.5 & -26.5 & -0.9 & 2.887 & 5.47E-10 \\
+-2   & -21.2 & -0.7 & 2.951 & 3.72E-10 \\
+-1.5 & -15.9 & -0.5 & 3.016 & 3.78E-11 \\
+-1   & -10.6 & -0.3 & 3.082 & 8.98E-10 \\
+-0.5 & -5.3 & -0.15 & 3.145 & 9.03E-10 \\
+0 & 0 & 0 & 3.211 & 1.18E-09 \\
+0.5  & 5.3 & 0.15 & 3.272 & 1.16E-10 \\
+1    & 10.6 & 0.3 & 3.338 & 2.05E-09 \\
+1.5  & 15.9 & 0.5 & 3.404 & 2.13E-09 \\
+2    & 21.2 & 0.7 & 3.468 & 6.96E-10 \\
+2.5  & 26.5 & 0.9 & 3.534 & 1.12E-09 \\
+3    & 31.8 & 1 & 3.599 & 1.05E-09
+\end{tabular}
+\end{ruledtabular}
+\label{V_I_Table}
+\end{table}
+
+\textcolor{blue}{The error voltage values in Table 1 seem unbelievable. Do you really have 1 part in $10^9$ precision?} 
+
+\section{Analysis}
+
+\subsection{changing theta experiment}
+We analyzed the data from both experiments separately to calculate two values for the Verdet Constant.  For the changing theta experiment, we used IgorPro to fit the function $V = A \cos ^2 (\theta + C)$ to the data in Figure ~\ref{V_ThetaRel_Plot}.  We then calculated the magnetic field from the applied current and our measurements of magnetic field for a current of 2A. The phase shift values are the difference between the C-values of the curve fits.  The results are in Table ~\ref{B*L_PhaseShift_Table}.  
+\
+\begin{table}[h!]
+\centering
+\caption{Curve fit data and calculated phase shifts for changing angle experiment, with magnetic fields calculated from the applied currents.}
+\begin{ruledtabular}
+\begin{tabular}{c c c c c c c}
+I (A) & BL (mT cm) & $\delta$BL (mT cm) & C (rad)& $\delta$C (rad) & $\Delta \theta$ (rad) & $\delta \Delta \theta$ (rad)\\
+\hline	% horizontal line to separate headings from data
+0 &  0  & 0 &  0.0088553 & 0.001 & 0 & 0.002    \\
+1 & 108 & 4  & 0.030849  & 0.0014 & 0.022  & 0.0024 \\
+2 & 215 & 8 & 0.049599  & 0.0013 & 0.0407 & 0.0023  \\
+3 & 323 & 12 & 0.072754  & 0.0015 & 0.0639 & 0.0025 
+\end{tabular}
+\end{ruledtabular}
+\label{B*L_PhaseShift_Table}
+\end{table}
+
+\textcolor{blue}{Need an explanation here of how the error in $BL$ was determined from $\delta \Delta \theta$  and  $V = A \cos ^2 (\theta + C)$. }
+
+
+We then plotted the phase shifts versus the magnetic field multiplied by the length of our rod, which gave us Figure ~\ref{PhaseShift_B*L_Plot}. From the theory we know that $\Delta \theta = v_c B L$ therefore we would expect our data to be linear and the Verdet constant to be the slope. From the linear fit of our plot we obtained a slope $19.5 \pm0.9 \frac{rad}{Tm}$.
+
+\textcolor{blue}{Does your attempted fit to a linear relationship confirm your expectation of a linear dependence? That is, is it consistent with your data within error? then be proud, and say so! } 
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{PhaseShift_B-L_Plot.pdf}
+\caption{A plot of Table \ref{B*L_PhaseShift_Table}, applied magnetic field (times length of the birefringent material) versus the resulting phase shift in the polarization of the light. The slope of a linear fit of this plot gives a value for the Verdet constant of the glass rod. }
+\label{PhaseShift_B*L_Plot}
+\end{figure}
+
+
+\subsection{changing field experiment}
+
+To get the Verdet constant from our changing field experiment, we first calculated the values of magnetic field times length for currents from -3A to 3A in steps of 0.5As, see Figure ~\ref{V_I_Table}. As before we calculated the field from our measured field for 2A and the linear relationship between field and current. We multiplied the magnetic field by the length of our glass rod (L = 10.15 cm) to get values for BL. 
+
+%\begin{table}[h!]
+%\centering
+%\caption{The fields due to the currents in table ~\ref{V_I_Table} applied to our solenoid, with the resulting voltage measured by the photodiode. }
+%\begin{ruledtabular}
+%\begin{tabular}{c c c c}
+%Magnetic Field * Length (mT*cm) & Error B*L (mT*cm) & Voltage (V) & Error Voltage (V)\\
+%\hline	% horizontal line to separate headings from data
+%-323 & 12 & 2.822 & 1.30E-10 \\
+%-269 & 10 & 2.887 & 5.47E-10 \\
+%-215 & 8  & 2.951 & 3.72E-10 \\
+%-161 & 6  & 3.016 & 3.78E-11 \\
+%-108 & 4  & 3.082 & 8.98E-10 \\
+%-54  & 2  & 3.145 & 9.03E-10 \\
+%0    & 0  & 3.211 & 1.18E-09 \\
+%54   & 2  & 3.272 & 1.16E-10 \\
+%108  & 4  & 3.338 & 2.05E-09 \\
+%161  & 6  & 3.404 & 2.13E-09 \\
+%215  & 8  & 3.468 & 6.96E-10 \\
+%269  & 10 & 3.534 & 1.12E-09 \\
+%323  & 12 & 3.599 & 1.05E-09
+%\end{tabular}
+%\end{ruledtabular}
+%\label{V_B*L_Table}
+%\end{table}
+
+We then plotted the results of Table ~\ref{V_I_Table} in Figure ~\ref{V_B*L_Plot}. From the slope of the linear fit we got $\frac{\delta V}{\delta BL} = 0.0012018 \pm 1.8 \times 10^{-6} \frac{V}{mT\ cm}$
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=5in]{V_B-L_Plot.pdf}
+\caption{A plot of Table \ref{V_I_Table}, the applied magnetic field (times the length of the refracting material) versus the voltage measured by the photodiode for that field. The slope of a linear curve fit to this plot can be used to calculate the Verdet constant of the material. }
+\label{V_B*L_Plot}
+\end{figure}
+
+
+Since, as shown above, $v_c = \frac{d \theta}{dBL}$, we can use the chain rule for derivatives and get: 
+\begin{equation}
+\frac{ dV}{ dBL} = \frac{dV}{d\theta} \frac{d\theta}{dBL} = \frac{dV}{d\theta} v_c
+\end{equation}
+Therefore 
+\begin{equation} 
+v_c = \frac{\frac{dV}{dBL}}{\frac{dV}{d\theta}}
+\end{equation}
+
+From Figure ~\ref{V_B*L_Plot} we got $\frac{dV}{dBL} = 0.0012018 \pm 1.8 \times 10^{-6}$. To get $\frac{dV}{d\theta}$, we took the derivative of the function $V = A \cos^{2}(\theta)$ at $\theta = \pi/4$ and obtained $\frac{dV}{d\theta} = -A$, and from the fit to the zero field data in Figure ~\ref{V_ThetaRel_Plot}, $A = 6.285 \pm 0.008 \frac{V}{mT\ cm}$.  
+
+Dividing these two results, we get $v_c = \frac{dV}{dBL} \div \frac{dV}{d\theta} = 19.12 \pm 0.05 \frac{rad}{Tm}$.  
+
+\textcolor{blue}{Is this consistent with your expectation and your other method?  then be proud, and briefly say so! } 
+
+%\begin{table}[h!]
+%\centering
+%\caption{C values taken from the curve fits to Figure ~\ref{V_ThetaRel_Plot}}
+%\begin{ruledtabular}
+%\begin{tabular}{c c c}
+%Current (A) & C value from curve fit (rad) & Error C value (rad)\\
+%\hline	% horizontal line to separate headings from data
+%0 & 0.0088553 & 0.001  \\
+%1 & 0.030849  & 0.0014 \\
+%2 & 0.049599  & 0.0013 \\
+%3 & 0.072754  & 0.0015
+%\end{tabular}
+%\end{ruledtabular}
+%\label{I_cValue_Table}
+%\end{table}
+
+
+
+
+\section{Discussion}
+
+\textcolor{red}{vague: All of our data fit the expected relationships}. \textcolor{blue}{consider: our experimental results are consistent with theoretical expectations, or, are consistent with each other, or, whatever it is you mean, more specifically}.  In Figure ~\ref{V_ThetaRel_Plot} the intensity of the light, given by voltage from the photodiode, showed a $\cos^2\theta$ relationship with the relative angle between as was expected. For the changing theta experiment the relationship between phase shift and magnetic field had a constant, positive slope, Figure ~\ref{PhaseShift_B*L_Plot}, which is reassuring since slope should be the Verdet constant, a constant positive value.  For the changing field experiment we expect intensity to depend linearly on field because a change in field causes a proportional change in phase shift and the relationship between intensity, i.e. voltage, and phase shift to be linear for small changes in phase. The values that we obtained for the Verdet constant from both experiments agreed with each other within uncertainty. Further they are within the range of values obtained by our peers performing similar experiments.
+
+The biggest sources of error in our experiments came from our measurement of the magnetic field and the imprecision of our angle measurement on the polarizing filter. To decrease error in future experiments we would suggest using a more accurate magnetic field sensor, and to measure the magnetic field for all currents used in the experiment. A more precise profile of magnetic field through the solenoid would also allow for integration of the field along the length of the material. This would give less uncertainty in B than the constant field approximation that we used. Finally, a polarizing filter that showed smaller increments for angle would help lower the uncertainty in relative angle. 
+
+\section{Conclusion}
+
+{\color{blue} This would be a good place to discuss the relative merits of the two measurement methods, which one is likely to have better accuracy, which one is likely to have better precision (remember the difference?), and which you would use for a follow on measurement of a material with a much smaller Verdet constant, for example. This would also be a good place to discuss how you might modify the experiment to measure the wavelength dependence, as well as to mention important technological applications of this effect (for example in chemistry and/or fiber optic telecommunications). }
+\begin{thebibliography}{3}
+
+\bibitem{melissanos} Adrian C. Melissanos and Jim Napoitano, \textit{Experiments in Modern Physics} 2nd edition (Academic Press, Boston, 2003)
+
+\bibitem{teachspin} Jonathan F. Reichert, \textit{Faraday Rotation: Instructor's Guide to TeachSpin's FRI-A Apparatus}
+
+\bibitem{opticalglass} Hans Bach and Norbert Neuroth, \textit{The Properties of Optical Glass} 2nd edition (Springer Science and Business Media, Mainz, Germany,1998)
+
+\end{thebibliography}
+\end{document}
