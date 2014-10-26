@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  10 OCT 2014 15:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  26 OCT 2014 17:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -204,41 +204,62 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen111
 \Gin@req@width=\dimen112
 )
-Class revtex4-1 Info: Patching LaTeX tabular. on input line 9.
-Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 9.
-Class revtex4-1 Info: cite was not loaded (OK!) on input line 9.
-Class revtex4-1 Info: mcite was not loaded (OK!) on input line 9.
-Class revtex4-1 Info: multicol was not loaded (OK!) on input line 9.
+(/usr/local/texlive/2014/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2014/04/23 v1.1a Standard LaTeX Color (DPC)
+
+(/usr/local/texlive/2014/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 137.
+)
+(/usr/local/texlive/2014/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box43
+\UL@hyphenbox=\box44
+\UL@skip=\skip49
+\UL@hook=\toks22
+\UL@height=\dimen113
+\UL@pe=\count108
+\UL@pixel=\dimen114
+\ULC@box=\box45
+Package: ulem 2012/05/18
+\ULdepth=\dimen115
+)
+Class revtex4-1 Info: Patching LaTeX tabular. on input line 10.
+Class revtex4-1 Info: Robustifying \LaTeX's \boldmath command on input line 10.
+
+Class revtex4-1 Info: cite was not loaded (OK!) on input line 10.
+Class revtex4-1 Info: mcite was not loaded (OK!) on input line 10.
+Class revtex4-1 Info: multicol was not loaded (OK!) on input line 10.
 
 (./Measuring the Verdet Constant.aux)
 \openout1 = `"Measuring the Verdet Constant.aux"'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 10.
+LaTeX Font Info:    ... okay on input line 10.
 
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count108
-\scratchdimen=\dimen113
-\scratchbox=\box43
-\nofMPsegments=\count109
-\nofMParguments=\count110
-\everyMPshowfont=\toks22
-\MPscratchCnt=\count111
-\MPscratchDim=\dimen114
-\MPnumerator=\count112
-\makeMPintoPDFobject=\count113
-\everyMPtoPDFconversion=\toks23
+\scratchcounter=\count109
+\scratchdimen=\dimen116
+\scratchbox=\box46
+\nofMPsegments=\count110
+\nofMParguments=\count111
+\everyMPshowfont=\toks23
+\MPscratchCnt=\count112
+\MPscratchDim=\dimen117
+\MPnumerator=\count113
+\makeMPintoPDFobject=\count114
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
 )
@@ -289,32 +310,29 @@ e
 ))
 \openout3 = `"Measuring the Verdet ConstantNotes.bib"'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 34.
+LaTeX Font Info:    Try loading font information for U+msa on input line 35.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 34.
+LaTeX Font Info:    Try loading font information for U+msb on input line 35.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Faraday_lab_set-up.pdf, id=13, 794.97pt x 614.295pt>
+) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+ [3]
+<Faraday_lab_set-up.pdf, id=22, 794.97pt x 614.295pt>
 File: Faraday_lab_set-up.pdf Graphic file (type pdf)
 
 <use Faraday_lab_set-up.pdf>
-Package pdftex.def Info: Faraday_lab_set-up.pdf used on input line 54.
+Package pdftex.def Info: Faraday_lab_set-up.pdf used on input line 58.
 (pdftex.def)             Requested size: 433.62pt x 335.07939pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[2] [3 <./Faraday_lab_set-up.pdf>] [4]
-<V_ThetaRel_Plot.pdf, id=202, 848.16875pt x 511.9125pt>
+ [4 <./Faraday_lab_set-up.pdf>] [5] [6]
+<V_ThetaRel_Plot.pdf, id=212, 848.16875pt x 511.9125pt>
 File: V_ThetaRel_Plot.pdf Graphic file (type pdf)
 
 <use V_ThetaRel_Plot.pdf>
-Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 77.
+Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 99.
 (pdftex.def)             Requested size: 433.62pt x 261.71243pt.
 
 
@@ -326,53 +344,63 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<PhaseShift_B-L_Plot.pdf, id=203, 879.285pt x 642.4pt>
+[7] <PhaseShift_B-L_Plot.pdf, id=217, 879.285pt x 642.4pt>
 File: PhaseShift_B-L_Plot.pdf Graphic file (type pdf)
 
 <use PhaseShift_B-L_Plot.pdf>
-Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 134.
+Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 164.
 (pdftex.def)             Requested size: 361.34999pt x 263.99344pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[5] <V_B-L_Plot.pdf, id=207, 995.72pt x 631.35875pt>
+[8 <./V_ThetaRel_Plot.pdf>] [9]
+<V_B-L_Plot.pdf, id=235, 995.72pt x 631.35875pt>
 File: V_B-L_Plot.pdf Graphic file (type pdf)
  <use V_B-L_Plot.pdf>
-Package pdftex.def Info: V_B-L_Plot.pdf used on input line 172.
+Package pdftex.def Info: V_B-L_Plot.pdf used on input line 203.
 (pdftex.def)             Requested size: 361.34999pt x 229.12901pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6 <./V_ThetaRel_Plot.pdf>] [7] [8 <./PhaseShift_B-L_Plot.pdf>]
+[10 <./PhaseShift_B-L_Plot.pdf>] [11 <./V_B-L_Plot.pdf>]
 No file "Measuring the Verdet Constant".bbl.
-[9 <./V_B-L_Plot.pdf>] (./Measuring the Verdet Constant.aux) ) 
+[12] (./Measuring the Verdet Constant.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
+
+
+ ) 
 Here is how much of TeX's memory you used:
- 4189 strings out of 493117
- 56325 string characters out of 6135433
- 138180 words of memory out of 5000000
- 7600 multiletter control sequences out of 15000+600000
- 12084 words of font info for 46 fonts, out of 8000000 for 9000
+ 4318 strings out of 493117
+ 57910 string characters out of 6135433
+ 140187 words of memory out of 5000000
+ 7719 multiletter control sequences out of 15000+600000
+ 12359 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,30p,1403b,290s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texli
-ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texliv
-e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/
-2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2
-014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on "Measuring the Verdet Constant.pdf" (9 pages, 656866 bytes).
+ 38i,9n,30p,2609b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr
+/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
+2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
+14/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "Measuring the Verdet Constant.pdf" (12 pages, 698436 bytes).
+
 PDF statistics:
- 292 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
+ 317 PDF objects out of 1000 (max. 8388607)
+ 193 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
