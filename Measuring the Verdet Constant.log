@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  26 OCT 2014 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  27 OCT 2014 15:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -341,14 +341,15 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+[7]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] <PhaseShift_B-L_Plot.pdf, id=217, 879.285pt x 642.4pt>
+<PhaseShift_B-L_Plot.pdf, id=217, 879.285pt x 642.4pt>
 File: PhaseShift_B-L_Plot.pdf Graphic file (type pdf)
 
 <use PhaseShift_B-L_Plot.pdf>
-Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 164.
+Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 160.
 (pdftex.def)             Requested size: 361.34999pt x 263.99344pt.
 
 
@@ -358,25 +359,25 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 <V_B-L_Plot.pdf, id=235, 995.72pt x 631.35875pt>
 File: V_B-L_Plot.pdf Graphic file (type pdf)
  <use V_B-L_Plot.pdf>
-Package pdftex.def Info: V_B-L_Plot.pdf used on input line 203.
+Package pdftex.def Info: V_B-L_Plot.pdf used on input line 199.
 (pdftex.def)             Requested size: 361.34999pt x 229.12901pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[10 <./PhaseShift_B-L_Plot.pdf>] [11 <./V_B-L_Plot.pdf>]
+[10 <./PhaseShift_B-L_Plot.pdf>] [11 <./V_B-L_Plot.pdf>] [12]
 No file "Measuring the Verdet Constant".bbl.
-[12] (./Measuring the Verdet Constant.aux)
+[13] (./Measuring the Verdet Constant.aux)
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
 
 
  ) 
 Here is how much of TeX's memory you used:
- 4318 strings out of 493117
- 57910 string characters out of 6135433
- 140187 words of memory out of 5000000
- 7719 multiletter control sequences out of 15000+600000
+ 4317 strings out of 493117
+ 57902 string characters out of 6135433
+ 140191 words of memory out of 5000000
+ 7718 multiletter control sequences out of 15000+600000
  12359 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,30p,2609b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -396,11 +397,11 @@ e/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
 2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/20
 14/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "Measuring the Verdet Constant.pdf" (12 pages, 698436 bytes).
+Output written on "Measuring the Verdet Constant.pdf" (13 pages, 698724 bytes).
 
 PDF statistics:
- 317 PDF objects out of 1000 (max. 8388607)
- 193 compressed objects within 2 object streams
+ 321 PDF objects out of 1000 (max. 8388607)
+ 196 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
