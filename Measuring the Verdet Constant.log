@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  28 OCT 2014 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  28 OCT 2014 22:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -331,46 +331,46 @@ Package pdftex.def Info: Faraday_lab_set-up.pdf used on input line 58.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[3] [4 <./Faraday_lab_set-up.pdf>] [5] [6]
-<V_ThetaRel_Plot.pdf, id=212, 848.16875pt x 511.9125pt>
+[3] [4 <./Faraday_lab_set-up.pdf>] [5]
+<V_ThetaRel_Plot.pdf, id=208, 848.16875pt x 511.9125pt>
 File: V_ThetaRel_Plot.pdf Graphic file (type pdf)
 
 <use V_ThetaRel_Plot.pdf>
-Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 99.
+Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 91.
 (pdftex.def)             Requested size: 433.62pt x 261.71243pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./V_ThetaRel_Plot.pdf>] [8]
-<PhaseShift_B-L_Plot.pdf, id=231, 879.285pt x 642.4pt>
-File: PhaseShift_B-L_Plot.pdf Graphic file (type pdf)
-
-<use PhaseShift_B-L_Plot.pdf>
-Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 160.
-(pdftex.def)             Requested size: 361.34999pt x 263.99344pt.
-
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-<V_B-L_Plot.pdf, id=232, 995.72pt x 631.35875pt>
+[6] [7 <./V_ThetaRel_Plot.pdf>] [8]
+<PhaseShift_B-L_Plot.pdf, id=230, 879.285pt x 642.4pt>
+File: PhaseShift_B-L_Plot.pdf Graphic file (type pdf)
+
+<use PhaseShift_B-L_Plot.pdf>
+Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 151.
+(pdftex.def)             Requested size: 361.34999pt x 263.99344pt.
+ <V_B-L_Plot.pdf, id=231, 995.72pt x 631.35875pt>
 File: V_B-L_Plot.pdf Graphic file (type pdf)
- <use V_B-L_Plot.pdf>
-Package pdftex.def Info: V_B-L_Plot.pdf used on input line 199.
+
+<use V_B-L_Plot.pdf>
+Package pdftex.def Info: V_B-L_Plot.pdf used on input line 190.
 (pdftex.def)             Requested size: 361.34999pt x 229.12901pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[9] [10 <./PhaseShift_B-L_Plot.pdf>] [11 <./V_B-L_Plot.pdf>] [12]
+[9 <./PhaseShift_B-L_Plot.pdf>] [10 <./V_B-L_Plot.pdf>] [11]
 No file "Measuring the Verdet Constant".bbl.
-[13] (./Measuring the Verdet Constant.aux) ) 
+[12] (./Measuring the Verdet Constant.aux) ) 
 Here is how much of TeX's memory you used:
- 4319 strings out of 493117
- 57921 string characters out of 6135433
- 138191 words of memory out of 5000000
- 7720 multiletter control sequences out of 15000+600000
- 12359 words of font info for 48 fonts, out of 8000000 for 9000
+ 4316 strings out of 493117
+ 57889 string characters out of 6135433
+ 141190 words of memory out of 5000000
+ 7718 multiletter control sequences out of 15000+600000
+ 12190 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,9n,30p,2609b,298s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist
@@ -388,13 +388,12 @@ lic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
 sfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmtt12.pfb>
-Output written on "Measuring the Verdet Constant.pdf" (13 pages, 696245 bytes).
+fonts/cm/cmti12.pfb>
+Output written on "Measuring the Verdet Constant.pdf" (12 pages, 689237 bytes).
 
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 196 compressed objects within 2 object streams
+ 313 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
