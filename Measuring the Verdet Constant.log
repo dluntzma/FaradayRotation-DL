@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  28 OCT 2014 22:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.5.25)  29 OCT 2014 10:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -332,11 +332,11 @@ Package pdftex.def Info: Faraday_lab_set-up.pdf used on input line 58.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [3] [4 <./Faraday_lab_set-up.pdf>] [5]
-<V_ThetaRel_Plot.pdf, id=208, 848.16875pt x 511.9125pt>
+<V_ThetaRel_Plot.pdf, id=205, 848.16875pt x 511.9125pt>
 File: V_ThetaRel_Plot.pdf Graphic file (type pdf)
 
 <use V_ThetaRel_Plot.pdf>
-Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 91.
+Package pdftex.def Info: V_ThetaRel_Plot.pdf used on input line 86.
 (pdftex.def)             Requested size: 433.62pt x 261.71243pt.
 
 
@@ -346,17 +346,17 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6] [7 <./V_ThetaRel_Plot.pdf>] [8]
-<PhaseShift_B-L_Plot.pdf, id=230, 879.285pt x 642.4pt>
+<PhaseShift_B-L_Plot.pdf, id=227, 879.285pt x 642.4pt>
 File: PhaseShift_B-L_Plot.pdf Graphic file (type pdf)
 
 <use PhaseShift_B-L_Plot.pdf>
-Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 151.
+Package pdftex.def Info: PhaseShift_B-L_Plot.pdf used on input line 146.
 (pdftex.def)             Requested size: 361.34999pt x 263.99344pt.
- <V_B-L_Plot.pdf, id=231, 995.72pt x 631.35875pt>
+ <V_B-L_Plot.pdf, id=228, 995.72pt x 631.35875pt>
 File: V_B-L_Plot.pdf Graphic file (type pdf)
 
 <use V_B-L_Plot.pdf>
-Package pdftex.def Info: V_B-L_Plot.pdf used on input line 190.
+Package pdftex.def Info: V_B-L_Plot.pdf used on input line 185.
 (pdftex.def)             Requested size: 361.34999pt x 229.12901pt.
 
 
@@ -376,24 +376,21 @@ Here is how much of TeX's memory you used:
 </usr/local/texlive/2014/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2014/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2014/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmti12.pfb>
-Output written on "Measuring the Verdet Constant.pdf" (12 pages, 689237 bytes).
+onts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2014/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmti12.pfb>
+Output written on "Measuring the Verdet Constant.pdf" (12 pages, 666320 bytes).
 
 PDF statistics:
- 313 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
+ 301 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
